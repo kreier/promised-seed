@@ -170,6 +170,8 @@ def create_canvas():
     pdf.set_author(pdf_author)
     pdf.set_title(dict['pdf_title'])
     pdf.set_subject(dict['pdf_subject'])
+    pdf.set_producer("fpdf2 library https://pyfpdf.github.io/fpdf2/")
+    pdf.set_creator("Matthias Kreier")
     drawing_width  = page_width - 2 * border_lr
     drawing_height = page_height - 2 * border_tb
     x1 = border_lr                                  # left for fpdf2 and reportlab
@@ -877,19 +879,8 @@ def create_qr_code(qr_file, language):
     print(f"QR code saved as {qr_file}")
 
 def create_timestamp():
-    qr_x = -4026
-    qr_y = 6.1
-    if version < 4.8:
-        timestamp_details = ["people", "judges", "prophets", "kings", "periods", "events", "objects", "terahfam"]
-        for index, detail in enumerate(timestamp_details):
-            drawString(f"{dict[detail]}", 4, x_position(-4075) + 6 * direction_factor, y2 - 42 + 4.5 * index, direction, False)
-        for index, detail in enumerate(timestamp_details):
-            counter_detail = str(eval("counter_" + detail))
-            counter_detail = number_to_string(counter_detail, language)
-            drawString(counter_detail, 4, x_position(-4075) + 5.4 * direction_factor, y2 - 42 + 4.5 * index, direction_rl, False)
-    else:
-        qr_x = -4075
-        qr_y = 3.8
+    qr_x = -4075
+    qr_y = 3.8
     pdf.set_font("Aptos", "", 4)
     pdf.set_text_color(50)
     pdf.set_text_shaping(use_shaping_engine=True, language="eng")
