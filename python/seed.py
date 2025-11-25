@@ -6,14 +6,14 @@ import pandas as pd
 import googletrans # it works again with v4.0.2 since 2024-11-20 that should fix many problems
 import datetime, sys, os, asyncio, qrcode
 
-# Some general settings
+# Some general settings for this A3 version
 version  = 0.1
 language = "en"
 language_str = "English"
 color_scheme = "normal"
 mm           = 2.834645669                # document is in pt, 46 rows with 12pt height, text 10pt
 border_lr    = 5*mm                       # space left/right usually 10, for roll holders 60
-border_tb    = 7*mm                       # space for the years top and bottom
+border_tb    = 5*mm                       # space for the years top and bottom
 page_width   = 297*mm                     # A3 portrait
 page_height  = 420*mm    
 pdf_author   = "https://github.com/kreier/promised-seed"
@@ -21,7 +21,7 @@ fontsize_regular = 10
 fontsize_AMoses  = 16
 y_offset         = 0
 vertical_lines   = False
-left_to_right    = True   # False for Arabic, Hebrew, Persian and other RTL writing systems
+left_to_right    = True          # False for Arabic, Hebrew, Persian and other RTL writing systems
 direction        = "r"
 direction_rl     = "l"
 direction_factor = 1
@@ -33,31 +33,12 @@ if os.getcwd()[-6:] != "python":
     print("This script must be executed inside the python folder.")
     exit()
 
-def year(date_float):             # convert the float dates to year, month and day
-    year = int(date_float)
-    if year < 0:
-        year -= 1
-    return year
-
-def month(date_float):
-    month = int((date_float - int(date_float))*12)
-    if date_float < 0:
-        month = 13 + month
-    return month
-
-def day(date_float):
-    month = (date_float - int(date_float))*12
-    if date_float < 0:
-        month = 13 + month
-    day = int((month - int(month))*30) + 1
-    return day
-
-def x_position(date_float):      # area is 6150 years wide from 4075 BCE to 2075 CE
+def x_position(column):      # we have 287 mm vertically for 28.7 columns of 1 cm width
     global x1, left_to_right
     if left_to_right:
-        return x1 + (4075 + date_float) * dots_year
+        return x1 + (column * 10*mm)
     else:
-        return x1 + (2075 - date_float) * dots_year
+        return x1 + (28.7 - column) * 10*mm
 
 def y_position(row_y):           # with update 2024/03/12 to height 204 -> 210mm we now have 46 lines
     global y1
@@ -236,117 +217,15 @@ def create_canvas():
     if df.at[row_index[0], 'replace_numerals']:
         replace_numerals = True
 
-def create_horizontal_axis():
+def create_border():
     global language, left_to_right
     pdf.set_line_width(0.8)
     pdf.set_draw_color(r=0, g=0, b=0)
-    pdf.line(x1, y1, x1 + page_width - 2 * border_lr, y1)    # axis on top and bottom of the drawing area
+    pdf.line(x1, y1, x1 + page_width - 2 * border_lr, y1)
     pdf.line(x1, y2, x1 + page_width - 2 * border_lr, y2)
-    pdf.set_font(font_regular, "", 11)                       # tickmarks and years for 61 centuries
-    for i in range(61):
-        tick_x = x_position(-4075) + (75 + 100 * i) * dots_year * direction_factor
-        pdf.set_draw_color(0)
-        pdf.line(tick_x, y1, tick_x, y1 - 2*mm)              # main tickmark
-        pdf.line(tick_x, y2, tick_x, y2 + 2*mm)
-        for l in range (-40, 0, 10):                         # smaller ticks left and right
-            tick_s = tick_x + l * dots_year
-            pdf.line(tick_s, y1, tick_s, y1 - 1*mm)
-            pdf.line(tick_s, y2, tick_s, y2 + 1*mm)
-        for r in range (10, 60, 10):
-            tick_s = tick_x + r * dots_year
-            pdf.line(tick_s, y1, tick_s, y1 - 1*mm)
-            pdf.line(tick_s, y2, tick_s, y2 + 1*mm)       
-        # label the year - old year = str(abs((100 * i) - 4000))
-        year = number_to_string(abs((100 * i) - 4000), language)
-        print_year = True
-        if i == 39:                                              # the year 100 BCE
-            if pdf.get_string_width(dict["BCE"]) > 60:
-                print_year = False
-        if i == 41:                                              # the year 100 CE
-            if pdf.get_string_width(dict["CE"]) > 60:
-                print_year = False
-        if i == 40:                                              # there is no year zero
-            print_year = False
-            pdf.line(tick_x, y1, tick_x, y1 - 6*mm)
-            pdf.line(tick_x, y2, tick_x, y2 + 6*mm)
-            drawString(dict["CE"], 11,  tick_x + 2 * direction_factor, y1 - 17, direction, False)
-            drawString(dict["CE"], 11,  tick_x + 2 * direction_factor, y2 +  7, direction, False)
-            drawString(dict["BCE"], 11, tick_x - 2 * direction_factor, y1 - 17, direction_rl, False)
-            drawString(dict["BCE"], 11, tick_x - 2 * direction_factor, y2 +  7, direction_rl, False)
-        if print_year:
-            drawString(year, 11, tick_x, y1 - 17, "c", False)
-            drawString(year, 11, tick_x, y2 +  7, "c", False)
-        if vertical_lines:                                       # vertical lines for centuries
-            pdf.set_line_width(0.1)
-            pdf.line(tick_x, y1, tick_x, y2)
-            if i > 28 and i < 35:                                # from 1100 to 600 BCE also every 50 years
-                 pdf.line(tick_x + 50 * dots_year, y1, tick_x + 50 * dots_year, y2)
-    drawString(dict["CE"],  11, x_position(2075)  - 20 * direction_factor, y1 - 17, direction, False)
-    drawString(dict["CE"],  11, x_position(2075)  - 20 * direction_factor, y2 +  7, direction, False)
-    drawString(dict["BCE"], 11, x_position(-4075) + 20 * direction_factor, y1 - 17, direction_rl, False)
-    drawString(dict["BCE"], 11, x_position(-4075) + 20 * direction_factor, y2 +  7, direction_rl, False)
+    pdf.line(x1, y1, x1, y2)
+    pdf.line(x1 + page_width - 2 * border_lr, y1, x1 + page_width - 2 * border_lr, y2)
 
-def create_adam_moses():
-    # unique pattern for people from Adam to Moses, and eventline for deluge
-    global counter_people, counter_events, language, fontsize_regular, fontsize_AMoses
-    global left_to_right, y_offset, direction, direction_factor
-
-    # Blue line for the deluge in 2370 BCE
-    pdf.set_line_width(1.0)
-    pdf.set_draw_color(r=0, g=0, b=255)
-    date_deluge = x_position(-2370)
-    pdf.line(date_deluge, y1, date_deluge, y2)
-    x_offset = 2 * direction_factor
-    drawString(f"{dict['Deluge']} {number_to_string(2370, language)} {dict['BCE']}", 12, date_deluge + x_offset, y1 + 6, direction, True)
-
-    # one special for Job
-    co = color['books']
-    job_y = 40.83           # see books.csv for the text and second timebar at 41.9
-    pdf.set_fill_color(r=191 + 64 * co[0], g=191 + 64 * co[1], b=191 + 64 * co[2])
-    # c.setFillColorRGB(0.75 + 0.25 * co[0], 0.75 + 0.25 * co[1], 0.75 + 0.25 * co[2])
-    x_start = x_position(-1675)
-    y_start = y_position(job_y)
-    x_width = x_position(1675) - x_position(1485)
-    pdf.rect(x_start, y_start, x_width, 2, style="F")
-
-    # Import the persons with date of birth and death (estimated on October 1st) as pandas dataframe
-    people = pd.read_csv("../db/adam-moses.csv", encoding='utf8')
-    print("Imported data Adam to Moses:", len(people))
-    for index, row in people.iterrows():
-        born = -year(row.born)
-        died = -year(row.died)
-        person = dict[f"{row.key}"]
-        details_r = f"{number_to_string(born, language)} {dict['to']} {number_to_string(died, language)} {dict['BCE']} - {number_to_string(born - died, language)} {dict['years_age']}"
-        if language == "ilo":
-            details_r = f"{born} {dict['to']} {died} {dict['BCE']} - {dict['years_age']} {born - died}"
-        x_box = x_position(row.born)
-        y_box = y1 + index * 20.5 + 2   # line height was 21 until 2024
-        if index > 18:   # after Terah
-            y_box += 12.5
-        if index == 23:  # Moses
-            y_box += 12
-        x_boxwidth = x_position(born) - x_position(died)
-        x_text = x_box + x_boxwidth * 0.5
-        co = color[f"{row.key}"]
-        pdf.set_fill_color(co[0]*255, co[1]*255, co[2]*255)
-        pdf.set_line_width(0.3)
-        pdf.set_draw_color(0)
-        pdf.rect(x_box, y_box, x_boxwidth, 19, style="FD") # Boxes are 19 pt high, 21 pt seperated from one another - 20.5 since 5.1
-        y_box += y_offset
-        pdf.set_text_color(255)
-        pdf.set_font(font_bold, "", fontsize_AMoses)
-        drawString(person, fontsize_AMoses, x_text, y_box + 2, "c", False)
-        pdf.set_text_color(0)
-        pdf.set_font(font_regular, "", 12)
-        drawString(details_r, 12, x_box + x_boxwidth + 2 * direction_factor, y_box + 3.5, direction, True)
-        if index > 0 and index < 23:
-            father_age_when_son_born = f"{number_to_string(father_born - born, language)} {dict['years_age']}"
-            pdf.set_font_size(9)
-            if language == "ilo":
-                father_age_when_son_born = f"{dict['years_age']} {father_born - born}"
-            drawString(father_age_when_son_born, 9, x_box - 3 * direction_factor, y_box + 1, direction_rl, True)
-        father_born = born
-        counter_people += 1
 
 def draw_event(text, date, ys, ye, yt, wl, pos):
     global fontsize_regular, pdf
@@ -416,61 +295,6 @@ def create_judges():
         drawString(judge, fontsize_regular, x_box + x_boxwidth * 0.5 , y_box + 4, "c", True)
         counter_judges += 1
 
-def create_kings():
-    global counter_kings, fontsize_regular, left_to_right, direction, direction_factor
-    # Import the persons with date of birth and death (estimated on October 1st) as pandas dataframe
-    kings = pd.read_csv("../db/kings.csv", encoding='utf8')
-    print("Imported data of kings:", len(kings))
-    pdf.set_font(font_regular, size=10)
-    pdf.set_line_width(0.3)
-    for index, row in kings.iterrows():
-        start = row.start
-        end   = row.end
-        if row.born < 0:
-            born = row.born
-            detail_born = ", " + dict["became_king"] + f" {number_to_string(int(start-born), language)} " + dict["age_kings"]
-        else:
-            born = start
-            detail_born = ""
-        detail = dict[f"{row.key}"] + " "
-        time_reigned = "("
-        if row.years > 0:
-            time_reigned += f"{number_to_string(row.years, language)} "
-            if row.years > 1:
-                time_reigned += f"{dict['years']}"
-            else:
-                time_reigned += f"{dict['year']}"
-        if row.months > 0:
-            time_reigned += f"{number_to_string(row.months, language)} "
-            if row.months > 1:
-                time_reigned += f"{dict['months']}"
-            else:
-                time_reigned += f"{dict['month']}"
-        if row.days > 0:
-            if row.months > 0:
-                time_reigned += " "
-            time_reigned += f"{number_to_string(row.days, language)} {dict['days']}"
-
-        detail += f"{number_to_string(-year(start), language)}-{number_to_string(-year(end), language)} {time_reigned})" + detail_born
-        x_box  = x_position(start) 
-        x_born = x_position(born)
-        y_box  = y_position(row.row_y) - 10
-        x_boxwidth = x_position(end) - x_position(start)        
-        # horizontal T-graph for time before coming king
-        pdf.set_line_width(0.3)
-        pdf.set_draw_color(0)
-        pdf.line(x_born, y_box + 6, x_box,  y_box + 6)            # offset with fpdf2 is -3, was +3 with reportlab
-        pdf.line(x_born, y_box + 1, x_born, y_box + 11)           # -3-5 = -8 and -3+5 = +2
-        # box to indicate time of reign
-        co = color[row.key]
-        pdf.set_fill_color(255*co[0], 255*co[1], 255*co[2])
-        pdf.rect(x_box, y_box, x_boxwidth, 12, style="FD")       # offset y_box was -3 - now its zero
-        y_box += 1
-        if index < 23:
-            drawString(detail, fontsize_regular, x_box + x_boxwidth + 2 * direction_factor, y_box, direction, True)
-        else:
-            drawString(detail, fontsize_regular, x_box - 2 * direction_factor, y_box, direction_rl, True)        
-        counter_kings += 1
 
 def faded_color(red, green, blue, percent):
     return [1 - percent * (1 - red), 1 - percent * (1 - green), 1 - percent * (1 - blue)]
@@ -498,35 +322,8 @@ def text_with_timebar(text, row, year_start, year_end, R, G, B, exact):
     timebar(x_box, y_box - 6, x_boxwidth, R, G, B, exact)
     drawString(text, fontsize_regular, x_box, y_box, direction, True)
 
-def create_prophets():
-    global counter_prophets
-    prophets = pd.read_csv("../db/prophets.csv", encoding='utf8')
-    print("Imported data of prophets:", len(prophets))
-    co = color['prophets']
-    for index, row in prophets.iterrows():
-        text_with_timebar(dict[row.key], row.row_y, row.start, row.end, co[0], co[1], co[2], False)
-        counter_prophets += 1
 
-def create_books():
-    global counter_people
-    books = pd.read_csv("../db/books.csv", encoding='utf8')
-    print("Imported data of books:", len(books))
-    co = color['books']
-    for index, row in books.iterrows():
-        text_with_timebar(dict[row.key], row.row_y, row.start, row.end, co[0], co[1], co[2], False)
-        counter_people += 1
 
-# def create_people():
-#     global counter_people
-#     people = pd.read_csv("../db/people.csv", encoding='utf8')
-#     print("Imported data of people:", len(people))
-#     co = color['people']
-#     for index, row in people.iterrows():
-#         exact = False
-#         if row.exact == "y":
-#             exact = True      
-#         text_with_timebar(dict[row.key], row.row_y, row.start, row.end, co[0], co[1], co[2], exact)
-#         counter_people += 1
 
 def create_objects():
     global counter_objects
@@ -621,89 +418,16 @@ def create_periods():
             drawString(detail, fontsize_regular, x_box + x_boxwidth + 2*direction_factor, y_box, direction, True)
         counter_periods += 1
 
-def create_caesars():
-    global counter_kings, fontsize_regular
-    # Import the persons with date of birth and death (estimated on October 1st) as pandas dataframe
-    caesars = pd.read_csv("../db/caesars.csv", encoding='utf8')
-    print("Imported data of caesars:", len(caesars))
-    for index, row in caesars.iterrows():
-        born  = row.born
-        start = row.start
-        end   = row.end
-        detail = dict[row.key] + " "
-        if start < 0:
-            detail += f"{int(-start+1)} {dict['BCE']} - "
-        else:
-            detail += f"{int(start)}-"
-        if end < 0:
-            detail += f" {int(-end+1)} {dict['BCE']}"
-        else:
-            detail += f"{int(end)} {dict['CE']}"
-        x_box  = x_position(start)
-        x_born = x_position(born)
-        y_box  = y_position(row.row_y) - 10
-        # x_boxwidth = (end -  start) * dots_year
-        x_boxwidth = x_position(end) - x_position(start)                
-        pdf.set_draw_color(0)
-        pdf.set_line_width(0.3)
-        pdf.line(x_born, y_box + 6, x_box,  y_box + 6)           # offset with fpdf2 is -3, was +3 with reportlab
-        pdf.line(x_born, y_box + 1, x_born, y_box + 11)          # -3-5 = -8 and -3+5 = +2
-        co = color['caesars']
-        pdf.set_fill_color(co[0]*255, co[1]*255, co[2]*255)
-        pdf.rect(x_box, y_box, x_boxwidth, 12, style="FD")       # offset y_box was -3 - now its zero
-        y_box += 1
-        drawString(detail, fontsize_regular, x_box + x_boxwidth + 2 * direction_factor, y_box, direction, False)
-        counter_kings += 1
 
-def tribulation_graphics(row):
-    global direction_factor
-    reference_y = y_position(row)
-    pdf.set_line_width(0)
-    co = color["tribulation1"]
-    pdf.set_fill_color(co[0]*255, co[1]*255, co[2]*255)
-    pdf.rect(x_position(2030), reference_y, x_position(2035)-x_position(2030), 10, style="F") # box 2030-2035
-    pdf.rect(x_position(2053), reference_y, x_position(2060)-x_position(2053), 10, style="F") # box 2053-2060
-    for falter in range(3):
-        xf = x_position(2035 + 6 * falter)
-        yf = reference_y - 1.64
-        d=direction_factor
-        co = color["tribulation2"]
-        pdf.set_fill_color(co[0]*255, co[1]*255, co[2]*255)
-        points = ((xf, yf+1.64), (xf + 1.64*d, yf+0), (xf + 1.64*d, yf+10), (xf, yf+11.64))
-        pdf.polygon(points, style="F")
-        co = color["tribulation3"]
-        pdf.set_fill_color(co[0]*255, co[1]*255, co[2]*255)
-        points = ((xf+3.30*d, yf+1.64), (xf + 1.64*d, yf+0), (xf + 1.64*d, yf+10), (xf+3.30*d, yf+11.64))
-        pdf.polygon(points, style="F")
 
-def create_tribulation():
-    # draw the band above last days (24.1) and king of the south anglo-america (36)
-    global fontsize_regular, direction_rl
-    tribulation_lines = [23.25]     # this was 22.35 and 34.65 until 5.2 in 2025-02-05
-    if edition_2025:
-        tribulation_lines = [21.25]
-    for row in tribulation_lines:
-        pdf.set_text_color(0)
-        pdf.set_font(font_regular, "", fontsize_regular)
-        drawString(dict["tribulation"], fontsize_regular, x_position(2027), y_position(row), direction_rl, True)
-        tribulation_graphics(row)
+
+
 
 def create_people():
     global direction_factor
-    shift_x = 30 * direction_factor
+    shift_x = 0 * direction_factor
     file_lines  = "../db/people-lines.csv"
     file_people = "../db/people.csv"
-    # file_footnotes = "../db/terah-footnotes.csv"
-    # if version > 4.8:
-    #     file_lines  = "../db/terah-lines2.csv"
-    #     file_family = "../db/terah-family2.csv"
-    # if version > 5.4:
-    #     file_lines  = "../db/terah-lines3.csv"
-    #     file_family = "../db/terah-family3.csv"
-    # if version > 5.8:
-    #     file_lines  = "../db/terah-lines4.csv"
-    #     file_family = "../db/terah-family4.csv"
-    #     file_footnotes = "../db/terah-footnotes4.csv"
     lines = pd.read_csv(file_lines, encoding='utf8')        # lines in black and green
     shift_lines = -0.33
     # footnotes = pd.read_csv(file_footnotes, encoding='utf8')    
@@ -713,19 +437,19 @@ def create_people():
         if row.type == "married":
             pdf.set_line_width(1.0)
             pdf.set_draw_color(13, 155, 13)
-        x_1 = x_position(-row.start) + shift_x
+        x_1 = x_position(row.start) + shift_x
         y_1 = y_position(row.start_row + shift_lines)
-        x_2 = x_position(-row.end) + shift_x
+        x_2 = x_position(row.end) + shift_x
         y_2 = y_position(row.end_row + shift_lines)
         pdf.line(x_1, y_1, x_2, y_2)
     people = pd.read_csv(file_people, encoding='utf8')      # text in blue and red on white boxes
-    print(f"Imported family tree of Terah: {len(people)} text fields")
+    print(f"Imported family tree of Jesus: {len(people)} text fields")
     red  = color["terah_red"]
     blue = color["terah_blue"]
     for index, row in people.iterrows():
         pdf.set_font(font_regular, "", 10)
         text_width = pdf.get_string_width(dict[row.key])
-        x = x_position(-row.left) + shift_x
+        x = x_position(row.column) + shift_x
         y = y_position(row.row) - 9
         pdf.set_line_width(2.0)
         pdf.set_fill_color(255)
@@ -879,7 +603,7 @@ def create_qr_code(qr_file, language):
     print(f"QR code saved as {qr_file}")
 
 def create_timestamp():
-    qr_x = -4075
+    qr_x = 5
     qr_y = 3.8
     pdf.set_font("Aptos", "", 4)
     pdf.set_text_color(50)
@@ -887,18 +611,18 @@ def create_timestamp():
     info_width = pdf.get_string_width(f"Timeline {version} – created {str(datetime.datetime.now())[0:16]} – {pdf_author} – license: MIT – some images are CC BY-SA")
     if left_to_right:
         info_width = 0
-    pdf.set_xy(x_position(-4075) - info_width, y2 - 6)
-    pdf.cell(text=f"Timeline {version} – created {str(datetime.datetime.now())[0:16]} – ")
+    pdf.set_xy(x_position(0) - info_width, y2 - 6)
+    pdf.cell(text=f"The Promised Seed {version} – created {str(datetime.datetime.now())[0:16]} – ")
     pdf.set_text_color(25, 25, 150)
-    pdf.cell(text=f"{pdf_author}", link="https://kreier.github.io/timeline/")
+    pdf.cell(text=f"{pdf_author}", link="https://kreier.github.io/promised-seed/")
     pdf.set_text_color(50)
-    pdf.cell(text=" – license: MIT – some ")
-    pdf.set_text_color(25, 25, 150)
-    pdf.cell(text="images", link="https://github.com/kreier/timeline/blob/main/images/images_source.csv")
-    pdf.set_text_color(50)
-    pdf.cell(text=" are ")
-    pdf.set_text_color(25, 25, 150)
-    pdf.cell(text="CC BY-SA", link="https://creativecommons.org/licenses/by-sa/4.0/")
+    pdf.cell(text=" – license: MIT")
+    # pdf.set_text_color(25, 25, 150)
+    # pdf.cell(text="images", link="https://github.com/kreier/timeline/blob/main/images/images_source.csv")
+    # pdf.set_text_color(50)
+    # pdf.cell(text=" are ")
+    # pdf.set_text_color(25, 25, 150)
+    # pdf.cell(text="CC BY-SA", link="https://creativecommons.org/licenses/by-sa/4.0/")
 
     qr_file = "../images/qr-" + language + ".png"
     qr_size = 15*mm
@@ -935,19 +659,12 @@ def create_timeline(lang):
     import_dictionary()
     import_colors()
     create_canvas()
-    create_horizontal_axis()
+    create_border()
     # create_adam_moses()
     # create_reference_events()
     # create_events_objects()
     # create_judges()
     # create_kings()
-    # create_prophets()
-    # create_books()
-    # create_people()
-    # create_objects()
-    # create_periods()
-    # create_caesars()
-    # create_tribulation()
     create_people()
     # include_pictures()
     # include_pictures_svg()

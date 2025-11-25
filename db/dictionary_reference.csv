@@ -1,562 +1,122 @@
 key,text,version,notes
 version,0.1,0.1,0.1
-pdf_title,The Promised Seed,0.1,2025-11-20
+pdf_title,The Promised Seed,0.1,2025-11-25
 pdf_subject,Lineage of Jesus,0.1,0.1
-BCE,B.C.E.,3.1,appendix B9
-CE,C.E.,3.1,
-year,year,3.1,
-years,years,3.1,
-years_age,years,3.1,
-age_kings,,4.1,
-month,month,3.1,
-months,months,3.1,
-day,day,3.1,
-days,days,3.1,
-to,to,3.1,
-people,people,3.1,
-judges,judges,3.1,
-prophets,prophets,3.1,
-kings,kings,3.1,
-periods,periods,3.1,
-events,events,3.1,
-objects,objects or items,4.1,
-Deluge,Deluge,4.1,
-Adam,Adam,3.1,Luke 3:38
-Seth,Seth,3.1,
-Enosh,Enosh,3.1,
-Kenan,Kenan,3.1,Genesis 5:12
-Mahalalel,Mahalalel,3.1,Ma·hala·lel
-Jared,Jared,3.1,
-Enoch,Enoch,3.1,
-Methuselah,Methuselah,3.1,Luke 3:37
-Lamech,Lamech,3.1,
-Noah,Noah,3.1,
-Shem,Shem,3.1,
-Arpachshad,Arpachshad,3.1,Luke 3:36
-Shelah,Shelah,3.1,
-Eber,Eber,3.1,
-Peleg,Peleg,3.1,
-Reu,Reu,3.1,
-Serug,Serug,3.1,Luke 3:35
-Nahor,Nahor,3.1,Genesis 11:24
-Terah,Terah,3.1,
-Abraham,Abraham,3.1,
-Isaac,Isaac,3.1,
-Jacob,Jacob,3.1,Luke 3:34
-Joseph,Joseph,3.1,Genesis 37
-Moses,Moses,3.1,
-Othniel,Othniel,4.1,Judges 3:9-11
-Ehud,Ehud,4.1,Judges 3:15-18
-Shamgar,Shamgar,4.1,Judges 3:31
-Barak,Barak,4.1,Judges 4:6
-Gideon,Gideon,4.1,Judges 7:1
-Tola,Tola,4.1,Judges 10:1
-Jair,Jair,4.1,Judges 10:3
-Jephthah,Jephthah,4.1,Judges 11:1
-Ibzan,Ibzan,4.1,Judges 12:8
-Elon,Elon,4.1,Judges 12:11
-Abdon,Abdon,4.1,Judges 12:13
-Samson,Samson,4.1,Judges 13:24
-Samuel,Samuel,4.1,1 Samuel 1:20
-Saul,Saul,4.1,1 Samuel 9:2
-David,David,4.1,1 Samuel 16:13
-Solomon,Solomon,4.1,1 Kings 2:1
-Rehoboam,Rehoboam,4.1,first king of southern kingdom of Juda
-Abijah,Abijah (Abijam),4.1,"3 years, also Abijam"
-Asa,Asa,4.1,A6-A
-Jehoshaphat,Jehoshaphat,4.1,
-Jehoram2,Jehoram,4.1,
-Ahaziah,Ahaziah,4.1,
-Athaliah,Queen Athaliah,4.1,Queen Athaliah
-Jehoash,Jehoash,4.1,
-Amaziah,Amaziah,4.1,
-Uzziah,Uzziah (Azariah),4.1,also Azariah
-Jotham,Jotham,4.1,A6-B
-Ahaz,Ahaz,4.1,
-Hezekiah,Hezekiah,4.1,
-Manasseh,Manasseh,4.1,
-Amon,Amon,4.1,
-Josiah,Josiah,4.1,
-Jehoahaz,Jehoahaz,4.1,Only 3 months
-Jehoiakim,Jehoiakim,4.1,
-Jehoiachin,Jehoiachin,4.1,Only 3 months 10 days
-Zedekiah,Zedekiah,4.1,
-Jeroboam,Jeroboam,4.1,first king of northern 10-tribe kingdom
-Nadab,Nadab,4.1,less than 2
-Baasha,Baasha,4.1,
-Elah,Elah,4.1,
-Zimri,Zimri,4.1,Only 7 days in ca. 751 BCE
-OmriTibni,Omri and Tibni together,4.1,4 years Omri and Tibni
-Omri,Omri (alone),4.1,from 947 Omri alone
-Ahab,Ahab,4.1,
-Jehoram,Jehoram,4.1,
-Jehu,Jehu,4.1,
-Jeoahaz,Jeoahaz,4.1,
-JeoahazJehoash,Jeoahaz and Jehoash,4.1,
-Jehoash2,Jehoash (alone),4.1,
-Jeroboam2,Jeroboam II,4.1,
-Zechariah,Zechariah,4.1,
-Schallum,Schallum,4.1,
-Menahem,Menahem,4.1,
-Pekahiah,Pekahiah,4.1,
-Pekah,Pekah,4.1,
-Hoshea,Hoshea,4.1,9 years from c. 748
-Elijah,Elijah,4.1,
-Elisha,Elisha,4.1,
-Jonah,Jonah,4.1,
-Amos,Amos,4.1,
-Joel,Joel,4.1,
-Hosea,Hosea,4.1,
-Isaiah,Isaiah,4.1,
-Micah,Micah,4.1,
-Zephaniah,Zephaniah,4.1,
-Nahum,Nahum,4.1,
-Jeremiah,Jeremiah,4.1,
-Habakuk,Habakuk,4.1,
-Daniel,Daniel,4.1,
-Ezekiel,Ezekiel,4.1,
-Obadiah,Obadiah,4.1,
-Malachi,Malachi,4.1,
-Ruth,Ruth,4.1,
-Ezra,Ezra,4.1,
-Nehemiah,Nehemiah,4.1,
-Esther,Esther,4.1,
-Job,Job,4.1,
-moses2,1593 to 1473 B.C.E. – 120 years,4.1,
-moses3,Moses,4.1,
-wilderness,Israel in the wilderness 1513 to 1473 B.C.E. – 40 years,4.1,
-timespan_judges,1473 to 1117 B.C.E. – 356 years,4.1,
-timespan_judges2,Time of the judges,4.1,
-temple1,Nisan 1513 B.C.E. to Ziv 1034 B.C.E.,4.1,
-temple2,479 years until the temple construction – 1 Kings 6:1,4.1,1034 BCE
-69weeks,Jesus baptized autumn 29 C.E.,4.1,
-69weeks2,69 weeks to the Messiah – Daniel 9:25,4.1,
-jesus_service,"3.5 years of Jesus service, executed Nisan 14th, 33 C.E.",4.1,
-jesus_life,Jesus born 2 B.C.E.,4.1,
-exile,607 to 537 B.C.E. – 70 years (Jeremiah 25:11),4.1,
-exile2,Exile,4.1,
-7times,Revelation 12:9,4.1,
-7times2,7 times – 2520 years to the Messianic Kingdom 1914 C.E. (Daniel 4:23),4.1,
-ww1,World War I – 1914–1918 C.E.,4.1,
-ww2,World War II – 1939–1945 C.E.,4.1,
-30_year_war,Thirty Years' War in Europe 1618-1648,4.1,
-joshua,110 years,4.1,
-joshua2,Joshua,4.1,
-caleb,more than 85 years,4.1,
-caleb2,Caleb,4.1,
-missionary1,"First Missionary Journey of Paul, c. 47-48 C.E. with Barnabas and John Mark",4.1,
-circumcision,"Circumcision issue at Antioch, conference in Jerusalem c. 49 C.E.",4.1,
-missionary2,Second Missionary Journey c. 49-52 C.E with Silas (Silvanus),4.1,
-missionary3,Third Missionary Journey c. 52-56 C.E.,4.1,
-caesarea,Paul in custody in Caesarea c. 56-58 C.E.,4.1,
-rome1,Paul’s first imprisonment in Rome c. 59-61 C.E.,4.1,
-rome2,"Paul’s second imprisonment in Rome c. 65 C.E., 2 Timothy written, Paul executed",4.1,
-Julius,Julius,4.1,
-Augustus,Augustus,4.1,Luke 2:1
-Tiberius,Tiberius,4.1,Luke 3:1
-Caligula,Caligula,4.1,
-Claudius,Claudius,4.1,Acts 11:28
-Nero,Nero,4.1,
-Galba-Otho-Vitellius,"Galba, Otho and Vitellius (Year of the Four Emperors)",4.1,
-Vespasian,Vespasian,4.1,
-event_exodus,"Exodus from Egypt on Nisan 14th, 1513 B.C.E.",4.1,
-event_division_kingdom,Division of Israel 997 BCE,4.1,
-event_destruction_samaria,Destruction of Samaria 740 B.C.E. by Assyria,4.1,
-event_destruction_samaria2,,4.1,
-event_destruction_jerusalem1,,4.1,
-event_temple_rebuilt,,4.1,
-event_jerusalem_rebuilt,,4.1,
-event_destruction_jerusalem2,,4.1,
-event_1914,,4.5,include scripture Luke 21:24
-became_king,,4.1,2025-04-14
-vulgate,,4.1,
-gutenberg,,4.1,
-erasmus,,4.1,
-luther,,4.1,
-tyndale,English Bible translation by Tyndale 1536,4.1,
-king_james,King James Bible 1611,4.1,
-69weeks3,"Jesus starts his service 29 CE (Luke 3:1, 21)",4.1,
-ransom,Middle of week “sacrifice to cease” Daniel 9:27,4.1,
-cornelius,Cornelius baptized at the end of 70 weeks (Daniel 9:24) in 36 C.E.,4.1,
-columbus,End of the pre-columbian period in the Americas 1492,4.1,
-declaration_independence,Declaration of independence of 13 colonies in America 1776,4.1,
-tischendorf,Tischendorf discovers the Codex Sinaiticus from the 4th century in 1844,4.1,
-dead_sea_scrolls,Dead Sea Scrolls written,4.1,
-septuagint,Septuagint LXX translated,4.1,
-watchtower,,4.1,
-photodrama,"The “Photo-Drama of Creation” is first shown in New York on January 11, 1914",4.1,
-jehovahs_witnesses,,4.5,
-gilead_school,,4.1,
-new_world_translation1,,4.5,
-truth_book,,4.1,
-metropolitan,,4.1,
-jw_org,,4.1,
-new_world_translation2,,4.5,
-jw_broadcasting,,4.1,
-meeting_workbook,New format of midweek meeting with “Meeting Workbook” starting January 2016,4.1,
-covid19,Covid-19,4.1,
-cold_war,Geopolitical situation labeled “Cold War” 1945-1991,4.1,
-timeline_created,,4.1,
-codex_sinaiticus,,4.1,
-codex_vaticanus,Codex Vaticanus written,4.1,
-leningrad_codex,Leningrad Codex written in Cairo AD 1008,4.1,
-john,John writes “revelation” while exiled on Patmos 96-98 C.E.,4.1,
-nicaea1,First Council of Nicaea,4.1,
-buddha,The Buddha – Siddhartha Gautama c.563-c.483 B.C.E,4.1,
-buddha2,Buddha alternatively c. 480-400 B.C.E.,4.1,
-mohammed,Mohammed c. 570-632 C.E.,4.1,
-confucius,Confucius c.551-c.479 B.C.E.,4.1,
-hijrah,Hijrah - Journey Mecca to Medina 16 July 622,4.1,
-moses_escape,"1553 B.C.E. Moses has to escape Egypt – Exodus 2:15, Acts 7:23",4.1,
-10plagues,1513 B.C.E Egypt receives 10 plagues,4.1,
-joseph_sold,Joseph sold as slave at the age of 17 – Gen 37:2,4.1,
-infliction,400 year infliction (Acts 7:6) – Ishmael 1913 B.C.E,4.1,
-Alexander,Alexander the Great (Daniel 11:3),4.1,
-persia,,4.1,
-persia2,,4.1,
-king_north,,4.1,
-king_north1,,4.1,
-king_south,,4.1,
-king_south1,King of the South,4.1,
-king_south2,"British Empire 1870, Anglo-American World Power since 1914",4.1,
-king_south3,King of the South,4.1,
-king_north2,"Germany with Emperor William I 1871 (v28), 1914 (v29), 1935 (v30b), 1939 (v31a)",4.1,
-king_north3,North,4.1,
-king_north4,"Soviet Union 1945-1991 (Daniel 11:32-39, 40b, 41)",4.1,
-king_north5,Russia since 2017 (w20 May),4.1,
-time_of_end,,4.5,scriptures written out
-time_of_end2,Last days,4.1,
-suryavaman2,King Suryavarman II builds Angkor Wat 1113-1150,4.1,
-notre-dame,Notre-Dame de Paris built 1163-1260,4.1,
-jehoiada,Jehoiada,4.1,2 Kings 11:4
-babel,Tower of Babel built,4.1,
-Haggai,Haggai,4.1,
-Zerubbabel,Zerubbabel (Luke 3:27),4.1,Luke 3:27
-Babylon,"Daniel 2:32, 36-38; 7:4",4.2,
-Medopersia,"Daniel 2:32, 39; 7:5",4.2,
-Greece,"Daniel 2:32, 39; 7:6",4.2,
-Rome,"Daniel 2:33, 40; 7:7",4.2,
-Angloamerica,"Daniel 2:33, 41-43",4.2,
-Babylon_c,Babylon,4.2,
-Medopersia_c,Medo-Persia,4.2,
-Greece_c,Greece,4.2,
-Rome_c,Rome,4.2,
-Angloamerica_c,Anglo-America,4.2,
-infliction1,400 year infliction,4.2,Acts 7:6
-infliction2,Acts 7:6,4.2,
-Jacob2,Jacob/,4.3,Jacob/Israel 1858-1711 – 147 years
-Israel,Israel,4.3,Genesis 35:10
-Sarah,Sarah,4.3,"2008-1881 BCE – 127 years, Isaiah 51:2"
-Hagar,Hagar,4.3,Genesis 21:14
-Haran,Haran,4.3,Genesis 11:26
-Reumah,Reumah,4.3,Concubine – 4 sons 22:24
-Milcah,Milcah,4.3,8 sons (Bethuel and 7 more)
-Lot,Lot,4.3,Genesis 11:27
-Lots_wife,Lot’s wife,4.3,
-Lots_daughters,Daughters of Lot,4.3,
-Moab,Moab (older daughter),4.3,Genesis 19:37
-Ammon,Ben-ammi (Ammon),4.3,Genesis 19:38
-Bethuel,Bethuel,4.3,Genesis 22:23
-Rebekah,Rebekah,4.3,
-Laban,Laban,4.3,Genesis 24:29
-Leah,Leah,4.3,Genesis 35:23
-Rachel,Rachel,4.3,Genesis 35:24
-Bilhah,Bilhah,4.3,Genesis 35:25
-Zilpah,Zilpah,4.3,Genesis 35:26
-Reuben,Reuben,4.3,
-Simeon,Simeon,4.3,
-Levi,Levi,4.3,Genesis 35:23
-Judah,Judah,4.3,
-Issachar,Issachar,4.3,
-Zebulun,Zebulun,4.3,
-Dinah,Dinah,4.3,Genesis 34
-Esau,Esau/,4.3,
-Edom,Edom,4.3,Genesis 36:1
-Ishmael,Ishmael,4.3,Genesis 16:16
-Manasseh2,(Manasseh,4.3,Genesis 41:50-52
-Ephraim,and Ephraim),4.3,
-Benjamin,Benjamin,4.3,
-Dan,Dan,4.3,Genesis 35:23
-Naphtali,Naphtali,4.3,
-Gad,Gad,4.3,
-Asher,Asher,4.3,
-Milcah1,"Uz, Buz, Kemuel,",4.3,Genesis 22:21
-Milcah2,"Chesed, Hazo,",4.3,
-Milcah3,"Pildash, Jidlaph",4.3,
-Tebah,Tebah,4.3,Genesis 22:24
-Gaham,Gaham,4.3,
-Tahash,Tahash,4.3,
-Maacah,Maacah,4.3,
-Mahalath,Mahalath/,4.3,"Genesis 28:8, 9"
-Basemath,Basemath,4.3,"Genesis36:3, 4"
-Reuel,Reuel,4.3,"36:13, 17"
-Nahath,Nahath,4.3,
-Zerah,Zerah,4.3,
-Schammah,Schammah,4.3,
-Mizzah,Mizzah,4.3,
-Adah,Adah,4.3,"36:11, 12, 15, 16"
-Eliphaz,Eliphaz,4.3,
-Teman,Teman,4.3,
-Omar,Omar,4.3,
-Zepho,Zepho,4.3,
-Kenaz,Kenaz,4.3,
-Korah,Korah,4.3,
-Gatam,Gatam,4.3,
-Amalek,Amalek,4.3,
-Oholibamah,Oholibamah,4.3,"36:14, 18"
-Jeush,Jeush,4.3,
-Jalam,Jalam,4.3,
-Nebaioth,Nebaioth,4.3,Genesis 25:13
-Kedar,Kedar,4.3,
-Adbeel,Adbeel,4.3,
-Mibsam,Mibsam,4.3,
-Mishma,Mishma,4.3,
-Dumah,Dumah,4.3,
-Massa,Massa,4.3,
-Hadad,Hadad,4.3,
-Tema,Tema,4.3,
-Jetur,Jetur,4.3,
-Naphish,Naphish,4.3,
-Kedemah,Kedemah,4.3,
-Babylon2,,4.2,no text left and right – empty!
-terahfam,Members of Terah’s family,4.1,
-rosetta,Rosetta stone 196 B.C.E.,4.1,
-Herodotus,"Herodotus c. 484 – c. 425 BC, writes The Histories",4.3,Father of History
-Aristotle,Aristotle 384 – 322 BC,4.3,"The First Teacher, The Philosopher"
-Ptolemy,Ptolemy c 100 – c. 170 C.E.,4.3,
-Pythagoras,Pythagoras c. 570 – c. 495 BC,4.3,
-Plato,Plato c. 427 – c. 348 BC,4.3,
-Socrates,Socrates c. 470 – c. 399 BC,4.3,
-Josephus,Josephus c. 37 – c. 100 C.E.,4.3,
-Cicero,Cicero 106–43 BC,4.3,
-lachish_letters,Lachish letters c. 590 B.C.E.,4.3,
-lachish_reliefs,Lachish reliefs c. 681 B.C.E.,4.3,
-mesha_stele,Mesha Stele (Moabite stone) c. 840 B.C.E.,4.3,
-gilgamesh,Gilgamesh and Aga 𒇽𒆥𒄄𒀀𒀝𒂵,4.3,
-epic_gilgamesh,Epic of Gilgamesh (Sîn-lēqi-unninni),4.3,
-oxyrhynchus,Oxyrhynchus Papyri,4.3,
-p52,Papyrus P52,4.3,
-daniel2_shift,0,4.2,Start 4.2
-daniel2_1,King Nebuchadnezzar,4.2,607 BCE
-daniel2_2,destroys Jerusalem,4.2,
-daniel2_3,Conquers Babylon,4.2,539 BCE
-daniel2_4,Cyrus decrees return,4.2,537 BCE
-daniel2_5,of Jews to Jerusalem,4.2,
-daniel2_6,Alexander the Great,4.2,331 BCE
-daniel2_7,conquers Persia,4.2,
-daniel2_8,Rules over Israel,4.2,63 BCE
-daniel2_9,Destroys Jerusalem,4.2,70 CE
-daniel2_10,"During World War I,",4.2,1914-1918 CE
-daniel2_11,Anglo-American World Power,4.2,
-daniel2_12,comes into being,4.2,End 4.2
-qing-dynasty,1636-1912,4.4,
-qing-dynasty_c,Qing dynasty,4.4,1636-1912
-ming-dynasty,1368-1644,4.4,
-ming-dynasty_c,Ming dynasty in imperial China,4.4,1368-1644
-yuan-dynasty,1271-1368,4.4,
-southern-song,1127-1279,4.4,
-northern-song,960-1127,4.4,
-western-xia,1038-1227,4.4,
-yuan-dynasty_c,Yuan,4.4,1271-1368
-southern-song_c,Southern Song,4.4,1127-1279
-northern-song_c,Northern Song,4.4,960-1127
-western-xia_c,Western Xia,4.4,1038-1227
-Copernicus,Nicolaus Copernicus,4.4,
-Galileo,Galileo Galilei,4.4,Galileo di Vincenzo Bonaiuti de' Galilei
-Newton,Isaac Newton,4.4,
-gregorian,Gregorian calendar 1582,4.4,
-shang-dynasty,c. 1600-1046 BC,4.4,
-western-zhou,c. 1046-771 BC,4.4,
-eastern-zhou,770-256 BC,4.4,
-qin-dynasty,Qin 221-207 BC,4.4,
-western-han,207 BC – 9 CE,4.4,
-eastern-han,25-220 CE,4.4,
-three-kingdoms,Three kingdoms 220-280 CE,4.4,
-sixteen-kingdoms,Sixteen kingdoms 304-439 CE,4.4,
-northern-dynasties,368-581 CE,4.4,
-southern-dynasties,420-589 CE,4.4,
-tang-dynasty1,,4.4,
-tang-dynasty2,"618-690, 705-907",4.4,
-wu-zhou,690-705 Wu Zhou,4.4,
-shang-dynasty_c,Shang dynasty,4.4,c. 1600-1046 BC
-western-zhou_c,Western Zhou,4.4,c. 1046-771 BC
-eastern-zhou_c,Eastern Zhou,4.4,770-256 BC
-western-han_c,Western Han,4.4,207 BC – 9 CE
-eastern-han_c,Eastern Han,4.4,25-220 CE
-three-kingdoms_c,China,4.4,Three kingdoms 220-280 CE
-sixteen-kingdoms_c,China,4.4,Sixteen kingdoms 304-439 CE
-northern-dynasties_c,Northern dynasties,4.4,368-581 CE
-southern-dynasties_c,Southern dynasties,4.4,420-589 CE
-tang-dynasty1_c,Tang,4.4,
-tang-dynasty2_c,Tang dynasty,4.4,"618-690, 705-907"
-xia-dynasty,Xia dynasty in China c. 2070 – c. 1600 BC,4.4,
-gonghe,,4.4,
-Ashoka,,4.4,
-siloam-tunnel,,4.5,c. 742-732 BC
-Angloamerica2,,4.5,
-Manetho,,4.5,
-tribulation,,4.5,
-destruction_babylon,,4.5,beginning of great tribulation (GT)
-gog_of_magog,,4.5,end of GT
-sheep_goat,,4.5,end of GT
-annointed,,4.5,end of GT
-armageddon,,4.5,end of system of things
-millenium,,4.5,
-great_crowd,,4.5,
-world_population,,4.5,
-607BCE,607 B.C.E.,4.6,accommodate for language
-539BCE,539 B.C.E.,4.6,systems in style:
-537BCE,537 B.C.E.,4.6,>>year 537 before time<<
-331BCE,331 B.C.E.,4.6,so they need a word
-63BCE,63 B.C.E.,4.6,prior to the year
-70CE,70 C.E.,4.6,and something
-1914CE,1914-1918 C.E.,4.6,after the year
-khmer_empire,804 – 1431 C.E.,4.6,
-khmer_empire_c,Khmer Empire - Angkor period,4.6,
-byzantine_empire,330-1453 C.E.,4.6,
-byzantine_empire_c,Byzantine Empire,4.6,
-ottoman_empire,1299 – 1922 C.E.,4.6,
-ottoman_empire_c,Ottoman Empire,4.6,
-holy_roman_empire,800 – 924 C.E.,4.6,
-holy_roman_empire2,962 – 1806 C.E.,5.1,fixed 2024-12-31
-holy_roman_empire_c,Holy Roman Empire – known as Holy Roman Empire of the German Nation after 1512,4.6,
-mongol_empire,Mongol Empire 1206 – 1294 C.E.,4.6,
-Genghis,Genghis Khan,4.6,
-maya_classic,250-950,4.6,
-maya_classic_c,Maya civilization – Classic period,4.6,
-maya_postclassic,950-1539,4.6,
-maya_postclassic_c,Maya civilization – Postclassic period,4.6,
-inca_empire,1438 – 1533 C.E.,4.6,
-inca_empire_c,Inca empire,4.6,
-gupta_empire,319 – 550 C.E.,4.6,
-gupta_empire_c,Gupta Empire,4.6,
-Teotihuacan,"Largest city in the Americas, pyramids build c. 200 C.E.",4.6,
-Teotihuacan_c,Teotihuacan,4.6,
-Dionysius_Exiguus,"Dionysius Exiguus, inventor of Anno Domini",4.6,
-Umayyad,661 – 750 C.E.,4.6,
-Umayyad_c,Umayyad,4.6,
-Abbasid,750 – 1258 C.E.,4.6,
-Abbasid_c,Abbasid Caliphate,4.6,
-Mamluk,1250 – 1517 C.E.,4.6,
-Mamluk_c,Mamluk Sultanate,4.6,
-ur3,Ur III Dynasty 𒋀𒀕𒆠,4.6,
-hammurabi,Hammurabi 𒄩𒄠𒈬𒊏𒁉,4.6,
-Al-Khwarizmi,al-Khwarizmi writes Al-Jabr (Algebra),4.6,
-al-azhar,Al-Azhar University is established in Cairo,4.6,
-Ibn-Sina,Ibn Sina or Avicenna,4.6,
-Al-Ghazali,Al-Ghazali,4.6,2024-07-30
-Keturah,Keturah,4.9,Genesis 25:1-4
-Zimran,Zimran,4.9,
-Jokshan,Jokshan,4.9,
-Medan,Medan,4.9,
-Midian,Midian,4.9,
-Ishbak,Ishbak,4.9,
-Shuah,Shuah,4.9,
-Timna,Timna,4.9,"1 Chr 1:36, Ge 36:10-12"
-Midianites,"1) Midianites: Numbers 31:2, 3",4.9,
-Moabites,"2) Moabites: Deuteronomy 23:3, 4",4.9,
-Ammonites,3) Ammonites: Joshua 12:2,4.9,
-Edomites,4) Edomites: Numbers 20:14-17,4.9,
-Temanites,5) Temanites: Job 42:7,4.9,
-Amalekites,6) Amalekites: 1 Samuel 15:2,4.9,2024-09-29
-life-expectancy,Life expectancy 75 years,4.9,
-life-expectancy2,(Psalm 90:10),4.9,2024-11-29
-430years,1943 – 1513 B.C.E.,5.1,
-430years_c,,5.1,2024-12-24
-maya_calendar,,5.1,2024-12-25
-xia-dynasty2,,5.1,2025-01-02
-xia-dynasty2_c,,5.1,
-tres_zapotes,,5.1,2024-12-31
-joseph_jacob_reunited,,5.1,2025-01-01
-king_south_light,,5.2,2025-02-05
-king_south_light_c,,5.2,2025-02-05
-king_north_light,,5.2,2025-02-05
-king_north_light_c,King of the North from Daniel 11,5.2,2025-02-05
-daniel2_iron,,5.2,2025-02-05
-daniel2_iron_c,Iron legs from Daniel 2,5.2,2025-02-05
-wulfila,Wulfila Bible,5.9,2025-09-20
-argenteus,Codex Argenteus c. 505,5.9,written copy of Wulfila Bible
-tran_dynasty,1225 – 1400,5.9,
-tran_dynasty_c,Trần dynasty,5.9,
-le_dynasty,1428 – 1527,5.9,triều Lê sơ or Vietnamese: nhà Lê sơ
-le_dynasty_c,Lê dynasty,5.9,
-revival_le_dynasty,1533-1789,5.9,
-revival_le_dynasty_c,Trịnh lords and Nguyễn lords,5.1,"Nhà Lê trung hưng, Revival Lê dynasty"
-nguyen_dynasty,1802 – 1883,5.9,
-nguyen_dynasty_c,Nguyễn,5.9,2025-09-20
-edo,1603 – 1868,5.9,
-edo_c,Edo period in Japan,5.9,
-meiji,1868 – 1912,5.9,
-meiji_c,Meiji,5.9,2025-09-20
-Ham,Ham,5.9,Gen 10:1
-Canaan,Canaan,5.9,Gen 10:6
-Sidon,Sidon,5.9,Gen 10:15
-Heth,Heth,5.9,Gen 10:15
-Jebusite,Jebusite,5.9,Gen 10:16
-Amorite,Amorite,5.9,Gen 10:16
-Girgashite,Girgashite,5.9,Gen 10:16
-Hivite,Hivite,5.9,Gen 10:17
-Arkite,Arkite,5.9,Gen 10:17
-Sinite,Sinite,5.9,Gen 10:17
-Arvadite,Arvadite,5.9,Gen 10:18
-Zemarite,Zemarite,5.9,Gen 10:18
-Hamathite,Hamathite,5.9,Gen 10:18
-Cush,Cush,5.9,Gen 10:6
-Nimrod,Nimrod,5.9,Gen 10:8
-Mizraim,Mizraim,5.9,Gen 10:14
-Casluh,Casluh,5.9,1 Chronicles 1:12 (Philistines)
-Japheth,Japheth,5.9,Gen 10:3
-Asshur,Asshur,5.9,Gen 10:22
-Lud,Lud,5.9,Gen 10:22
-Aram,Aram,5.9,Gen 10:22
-Elam,Elam,5.9,Gen 10:22
-Joktan,Joktan,5.9,Gen 10:26
-Almodad,Almodad,5.9,Gen 10:26
-Sheleph,Sheleph,5.9,Gen 10:26
-Hazarmareth,Hazarmareth,5.9,Gen 10:26
-Jerah,Jerah,5.9,Gen 10:26
-Hadoram,Hadoram,5.9,Gen 10:27
-Uzal,Uzal,5.9,Gen 10:27
-Diklah_Obal,"Diklah, Obal",5.9,Gen 10:27
-Abimael,Abimael,5.9,Gen 10:28
-Sheba_Ophir,"Sheba, Ophir",5.9,"Gen 10:28, 29"
-Havilah,Havilah,5.9,Gen 10:29
-Jobab,Jobab,5.9,Gen 10:29
-Korah_Gatam,"Korah, Gatam",5.9,303 and 304
-Adbeel_Mibsam,"Adbeel, Mibsam",5.9,311 and 312
-Dumah_Massa,"Dumah, Massa",5.9,314 and 315
-Ham_fn,1) Egyptians: Psalms 105:23,5.9,2025-09-22
-Canaan_fn,2) Canaanites: Joshua 13:3,5.9,2025-09-22
-Aram_fn,3) Arameans: Hosea 12:12,5.9,2025-09-22
-Elam_fn,4) Elamites: Ezra 4:9,5.9,2025-09-22
-Asshur_fn,5) Assyrians: Ezekiel 27:23,5.9,2025-09-22
-Casluh_fn,6) Philistines: 1 Chronicles 1:12,5.9,2025-09-22
-Cush_fn,7) Ethiopian [Cushite]: 2 Kings 19:9,5.9,2025-09-22
-Edom_fn,8) Edomites: Numbers 20:14-17,5.9,same as 459
-Moab_fn,"9) Moabites: Deuteronomy 23:3, 4",5.9,same as 457
-Ammon_fn,10) Ammonites: Joshua 12:2,5.9,same as 458
-Midian_fn,"11) Midianites: Numbers 31:2, 3",5.9,same as 456
-Amalek_fn,12) Amalekites: 1 Samuel 15:2,5.9,same as 461
-Teman_fn,13) Temanites: Job 42:7,5.9,same as 460
-Sidon_fn,14) Sidonians: Zechariah 9:2,5.9,2025-09-22
-Heth_fn,15) Hittites: Genesis 15:20,5.9,2025-09-22
-Jebusite_fn,16) Jebusites: Joshua 15:63,5.9,2025-09-22
-Judith,Judith?,5.9,"Genesis 26:34, 35"
-Lud_fn,17) Lydians: 1 Chronicles 1:17,5.9,"Jewish Antiquities, I, 143, 144 [vi, 4]"
-Ishmael_fn,18) Ishmaelites: Genesis 37:27,5.9,2025-09-22
-Amorite_fn,19) Amorites: Judges 6:10,5.9,2025-09-22
-Hivite_fn,"20) Hivites [Gibeon]: Joshua 9:3, 7",5.9,Gibeonites
-american_civil_war,American Civil War 1861-1865,5.9,"April 12, 1861 to May 26, 1865"
-aleppo_codex,Aleppo Codex c. 920,5.11,2025-10-03
-seljuk_empire,1037 – 1194 C.E.,5.11,
-seljuk_empire_c,Seljuk empire,5.11,
-vandals,Kingdom of the Vandals and Alans 435 – 534 C.E.,5.11,
-vandals_c,Vandals,5.11,
-francia,"c. 481/509 – 843 C.E., Merovingian till 751, then Carolingian",5.11,
-francia_c,Kingdom of the Franks,5.11,
-lombard,568 – 774 C.E.,5.11,Kingdom of the Lombards 568-774
-lombard_c,Lombard Kingdom,5.11,2025-10-13
-100_years_war,Hundred Years’ War 1337 – 1453,5.11,1337–1453
-black_death,Black death 1346-1353,5.11,1346-1353
-sui_dynasty,581-618 Sui dynasty,5.11,2025-11-09
-sui_dynasty_c,Sui,5.11,2025-11-09
+Adam,Adam,0.1,Luke 3:38
+Seth,Seth,0.1,
+Enosh,Enosh,0.1,
+Cainan,Cainan,0.1,
+Kenan,Kenan,0.1,"Genesis 5:12, Cainan in Luke 3:37"
+Mahalaleel,Ma·haʹla·le·el ,0.1,Ma·hala·lel
+Jared,Jared,0.1,
+Enoch,Enoch,0.1,
+Methuselah,Methuselah,0.1,Luke 3:37
+Lamech,Lamech,0.1,
+Noah,Noah,0.1,
+Shem,Shem,0.1,
+Arpachshad,Arpachshad,0.1,Luke 3:36
+Shelah,Shelah,0.1,
+Eber,Eber,0.1,
+Peleg,Peleg,0.1,
+Reu,Reu,0.1,
+Serug,Serug,0.1,Luke 3:35
+Nahor,Nahor,0.1,Genesis 11:24
+Terah,Terah,0.1,
+Abraham,Abraham,0.1,
+Isaac,Isaac,0.1,
+Jacob,Jacob,0.1,Luke 3:34
+Judah,Judah,0.1,Leah
+Levi,Levi,0.1,Leah
+Reuben,Reuben,0.1,Leah
+Simeon,Simeon,0.1,Leah
+Issachar,Issachar,0.1,Leah
+Zebulun,Zebulun,0.1,Leah
+Joseph,Joseph,0.1,Rahel
+Benjamin,Benjamin,0.1,Rahel
+Asher,Asher,0.1,Zilpah
+Gad,Gad,0.1,Zilpah
+Naphtali,Naphtali,0.1,Bilhah
+Dan,Dan,0.1,Bilhah
+Perez,Perez,0.1,from Tamar and Judah
+Hezron,Hezron,0.1,
+Ram_Arni,Ram (Arni),0.1,"Matthew Ram, Luke Arni"
+Amminadab,Amminadab,0.1,
+Nahshon,Nahshon,0.1,
+Salma_Salmon,Salma (Salmon),0.1,with Rahab (Matthew)
+Boaz,Boaz,0.1,with Ruth (Matthew)
+Obed,Obed,0.1,
+Jesse,Jesse,0.1,
+David,David,0.1,with Bathsheba
+Nathan,Nathan,0.1,natural through Mary (Luke)
+Mattatha,Mattatha,0.1,
+Menna,Menna,0.1,
+Melea,Melea,0.1,
+Elakim,Elakim,0.1,
+Jonam,Jonam,0.1,
+Joseph,Joseph,0.1,
+Judas,Judas,0.1,
+Symeon,Symeon,0.1,
+Levi,Levi,0.1,
+Matthat,Matthat,0.1,
+Jorim,Jorim,0.1,
+Eliezer,Eliezer,0.1,
+Jesus,Jesus,0.1,
+Er,Er,0.1,
+Elmadam,Elmadam,0.1,
+Cosam,Cosam,0.1,
+Addi,Addi,0.1,
+Melchi,Melchi,0.1,
+Neri,Neri,0.1,
+Shealtiel,Shealtiel,0.1,
+Zerubbabel,Zerubbabel,0.1,overlap two lineages
+Rhesa,Rhesa,0.1,
+Joanan,Joanan,0.1,
+Joda,Joda,0.1,
+Josech,Josech,0.1,
+Semein,Semein,0.1,
+Mattathias,Mattathias,0.1,
+Maath,Maath,0.1,
+Naggai,Naggai,0.1,
+Esli,Esli,0.1,
+Nahum,Nahum,0.1,
+Amos,Amos,0.1,
+Mattathias,Mattathias,0.1,
+Joseph,Joseph,0.1,
+Jannai,Jannai,0.1,
+Melchi,Melchi,0.1,
+Levi,Levi,0.1,
+Matthat,Matthat,0.1,
+Heli,Heli,0.1,
+Joseph,Joseph,0.1,
+Jesus,Jesus,0.1,
+Mary,Mary,0.1,Luke states Joseph here
+Solomon,Solomon,0.1,legal line w/ Joseph (Matthew)
+Rehoboam,Rehoboam,0.1,
+Abijah,Abijah,0.1,
+Asa,Asa,0.1,Matt 1:8
+Jehoshaphat,Jehoshaphat,0.1,
+Jehoram,Jehoram,0.1,
+Ahaziah,Ahaziah,0.1,missing in Matthew
+Jehoash,Jehoash,0.1,missing in Matthew
+Amaziah,Amaziah,0.1,missing in Matthew
+Uzziah_Azariah,Uzziah (Azariah),0.1,Matt 1:9
+Jotham,Jotham,0.1,
+Ahaz,Ahaz,0.1,
+Hezekiah,Hezekiah,0.1,
+Manasseh,Manasseh,0.1,
+Amon,Amon,0.1,
+Josiah,Josiah,0.1,
+Eliakim_Jehoiakim,Eliakim (Jehoiakim),0.1,
+Jeconiah_Jehoiachin,Jeconiah (Jehoiachin),0.1,
+Shealtiel,Shealtiel,0.1,
+Pedaiah,Pedaiah,0.1,"missing in Matthew, Z in 55"
+Abiud,Abiud,0.1,after Zerubbabel (Sheshbazzar)
+Eliakim,Eliakim,0.1,
+Azor,Azor,0.1,
+Zadok,Zadok,0.1,
+Achim,Achim,0.1,
+Eliud,Eliud,0.1,
+Eleazar,Eleazar,0.1,
+Matthan,Matthan,0.1,
+Jacob,Jacob,0.1,
+Joseph,Joseph,0.1,
