@@ -429,6 +429,9 @@ def create_people():
     file_lines  = "../db/people-lines.csv"
     file_people = "../db/people.csv"
     lines = pd.read_csv(file_lines, encoding='utf8')        # lines in black and green
+    people = pd.read_csv(file_people, encoding='utf8')      # text in blue and red on white boxes
+    print(f"Imported family tree of Jesus: {len(people)} text fields")
+
     shift_lines = -0.33
     # footnotes = pd.read_csv(file_footnotes, encoding='utf8')    
     for index, row in lines.iterrows():
@@ -442,7 +445,6 @@ def create_people():
         x_2 = x_position(row.end) + shift_x
         y_2 = y_position(row.end_row + shift_lines)
         pdf.line(x_1, y_1, x_2, y_2)
-    people = pd.read_csv(file_people, encoding='utf8')      # text in blue and red on white boxes
     print(f"Imported family tree of Jesus: {len(people)} text fields")
     red  = color["terah_red"]
     blue = color["terah_blue"]
