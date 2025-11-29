@@ -647,7 +647,7 @@ def create_timestamp():
     # And finally the name of this project into the top left corner
     pdf.set_text_color(28, 14, 118)
     pdf.set_font("Aptos-bold", "", 24)
-    drawString("The Promised Seed", 22, 7*mm, 6*mm, "r", True)
+    drawString(dict["pdf_title"], 22, 7*mm, 6*mm, "r", True)
 
 def render_to_file():
     global pdf, filename
