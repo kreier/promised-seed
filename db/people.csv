@@ -1,5 +1,5 @@
 key,row,column,color,notes,list,sup,ver
-Adam,1,14.3,blue,,1,0,0.1
+Adam,1,14.3,blue,*** START IN ROW ONE ***,1,0,0.1
 Seth,2,14.3,blue,,2,0,1
 Enosh,3,14.3,blue,,3,0,1
 Kenan,4,14.3,blue,Cainan in Luke 3:37,4,0,1
@@ -84,7 +84,7 @@ Levi,71,16,blue,,71,0,1
 Matthat,72,16,blue,,72,0,1
 Heli,73,16,blue,,73,15,1
 Mary,74,16,red,Luke states Joseph here,74,0,1
-Jesus,75,14.3,blue,,75,0,1
+Jesus,75,14.3,blue,*** THE PROMISED SEED ***,75,0,1
 Solomon,34,12.6,blue,legal line w/ Joseph (Matthew),76,0,1
 Rehoboam,35,12.6,blue,,77,0,1
 Abijah,36,12.6,blue,,78,0,1
