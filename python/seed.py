@@ -601,7 +601,7 @@ def create_qr_code(qr_file, language):
         box_size=8,
         border=1,
     )
-    url = f"https://timeline24.github.io/timeline_{language}.pdf"
+    url = f"https://kreier.github.io/seed/{language}.pdf"
     qr.add_data(url)
     qr.make(fit=True)
 
@@ -611,8 +611,8 @@ def create_qr_code(qr_file, language):
     print(f"QR code saved as {qr_file}")
 
 def create_timestamp():
-    qr_x = 5
-    qr_y = 3.8
+    qr_x = 28.66
+    qr_y = 0.1
     pdf.set_font("Aptos", "", 4)
     pdf.set_text_color(50)
     pdf.set_text_shaping(use_shaping_engine=True, language="eng")
@@ -632,28 +632,29 @@ def create_timestamp():
     # pdf.set_text_color(25, 25, 150)
     # pdf.cell(text="CC BY-SA", link="https://creativecommons.org/licenses/by-sa/4.0/")
 
-    # qr_file = "../images/qr-" + language + ".png"
-    # qr_size = 15*mm
-    # if not os.path.exists(qr_file):
-    #     create_qr_code(qr_file, language)
-    # if left_to_right:
-    #     pdf.image(qr_file, x_position(qr_x), y_position(qr_y), qr_size, qr_size)
-    # else:
-    #     pdf.image(qr_file, x_position(qr_x) - qr_size, y_position(qr_y), qr_size, qr_size)
-    # pdf.set_font_size(4.5)
-    # pdf.set_text_color(30)
-    # timestamp = str(datetime.datetime.now())
-    # dateindex = timestamp[2:4] + timestamp[5:7] + timestamp[8:10]
-    # rotation_angle = -90
+    qr_file = "../images/qr-" + language + ".png"
+    qr_size = 15*mm
+    if not os.path.exists(qr_file):
+        create_qr_code(qr_file, language)
+    if left_to_right:
+        pdf.image(qr_file, x_position(qr_x) - qr_size, y_position(qr_y), qr_size, qr_size)
+    else:
+        pdf.image(qr_file, x_position(qr_x), y_position(qr_y), qr_size, qr_size)
+    pdf.set_font_size(4.5)
+    pdf.set_text_color(30)
+    timestamp = str(datetime.datetime.now())
+    dateindex = timestamp[2:4] + timestamp[5:7] + timestamp[8:10]
+    rotation_angle = 90
     # rotation_y = y_position(qr_y + 0.1)
-    # if left_to_right:
-    #     rotation_angle = 90
-    #     rotation_y += qr_size * 0.94
-    # with pdf.rotation(angle=rotation_angle, x=x_position(qr_x), y=rotation_y):
-    #     pdf.set_xy(x_position(qr_x), y_position(qr_y + 0.2) + qr_size * (1.47 + 0.47 * direction_factor))
-    #     pdf.cell(text="promised-seed " + language)
-    #     pdf.set_xy(x_position(qr_x), y_position(qr_y + 0.58) + qr_size * (1.47 + 0.47 * direction_factor))
-    #     pdf.cell(text=dateindex)
+    rotation_y = y_position(qr_y + 0.1) - qr_size * 0.94
+    if left_to_right:
+        rotation_angle = -90
+        rotation_y += qr_size * 0.94
+    with pdf.rotation(angle=rotation_angle, x=x_position(qr_x), y=rotation_y):
+        pdf.set_xy(x_position(qr_x), y_position(qr_y + 0.2) + qr_size * (1.47 - 0.47 * direction_factor))
+        pdf.cell(text="promised-seed " + language)
+        pdf.set_xy(x_position(qr_x), y_position(qr_y + 0.58) + qr_size * (1.47 - 0.47 * direction_factor))
+        pdf.cell(text=dateindex)
 
 def render_to_file():
     global pdf, filename
