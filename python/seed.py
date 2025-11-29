@@ -40,9 +40,9 @@ def x_position(column):      # we have 287 mm vertically for 28.7 columns of 1 c
     else:
         return x1 + (28.7 - column) * 10*mm
 
-def y_position(row_y):           # with update 2024/03/12 to height 204 -> 210mm we now have 46 lines
+def y_position(row_y):           # with update 2025/11/29 to height 14 pt
     global y1
-    return y1 + row_y * 12       # vertically centered 10 point script in 12 pt line, 1pt above/below
+    return y1 + row_y * 14       # vertically centered 10 point script in 14 pt line, 2 pt above/below
 
 def drawString(text, fontsize, x_string, y_string, position, white_background):
     global pdf
@@ -426,26 +426,32 @@ def create_periods():
 def create_people():
     global direction_factor
     shift_x = 0 * direction_factor
-    file_lines  = "../db/people-lines.csv"
-    file_people = "../db/people.csv"
-    lines = pd.read_csv(file_lines, encoding='utf8')        # lines in black and green
-    people = pd.read_csv(file_people, encoding='utf8')      # text in blue and red on white boxes
+    file_people   = "../db/people.csv"
+    file_married  = "../db/married.csv"
+    file_children = "../db/children.csv"
+    people   = pd.read_csv(file_people, encoding='utf8')      # text in blue and red on white boxes
+    married  = pd.read_csv(file_married, encoding='utf8')    # married couples connected with a green line
+    children = pd.read_csv(file_children, encoding='utf8')  # children connected to parents with black lines
     print(f"Imported family tree of Jesus: {len(people)} text fields")
-
-    shift_lines = -0.33
-    # footnotes = pd.read_csv(file_footnotes, encoding='utf8')    
-    for index, row in lines.iterrows():
-        pdf.set_line_width(0.3)
-        pdf.set_draw_color(0)
-        if row.type == "married":
-            pdf.set_line_width(1.0)
-            pdf.set_draw_color(13, 155, 13)
-        x_1 = x_position(row.start) + shift_x
-        y_1 = y_position(row.start_row + shift_lines)
-        x_2 = x_position(row.end) + shift_x
-        y_2 = y_position(row.end_row + shift_lines)
+    pdf.set_line_width(1.0)
+    pdf.set_draw_color(13, 155, 13)
+    for index, row in married.iterrows():
+        x_1 = x_position(people.loc[people["key"] == row.husband, "column"].values[0])
+        y_1 = y_position(people.loc[people["key"] == row.husband, "row"].values[0]) - 4
+        x_2 = x_position(people.loc[people["key"] == row.wife, "column"].values[0])
+        y_2 = y_position(people.loc[people["key"] == row.wife, "row"].values[0]) - 4
         pdf.line(x_1, y_1, x_2, y_2)
-    print(f"Imported family tree of Jesus: {len(people)} text fields")
+    pdf.set_line_width(0.3)
+    pdf.set_draw_color(0)
+    for index, row in children.iterrows():
+        x_1 = x_position(people.loc[people["key"] == row.parent, "column"].values[0]) + row.shift_parent
+        y_1 = y_position(people.loc[people["key"] == row.parent, "row"].values[0]) + row.shift_y
+        x_2 = x_position(people.loc[people["key"] == row.child, "column"].values[0])
+        y_2 = y_position(people.loc[people["key"] == row.child, "row"].values[0])
+        if x_1 != x_2:
+            pdf.line(x_1, y_1 + 3, x_2, y_1 + 3)   # horizontal line from parent to child
+        pdf.line(x_2, y_1 + 3, x_2, y_2)           # vertical line down to child
+        pdf.line(x_1, y_1 + 3, x_1, y_1)           # vertical line up to parent
     red  = color["terah_red"]
     blue = color["terah_blue"]
     for index, row in people.iterrows():
@@ -453,7 +459,7 @@ def create_people():
         text_width = pdf.get_string_width(dict[row.key])
         x = x_position(row.column) + shift_x
         y = y_position(row.row) - 9
-        pdf.set_line_width(2.0)
+        pdf.set_line_width(0.5)
         pdf.set_fill_color(255)
         pdf.set_draw_color(255)
         pdf.rect(x - 0.5 * text_width - 1, y, text_width + 2, 10, style = "FD")
@@ -613,7 +619,7 @@ def create_timestamp():
     info_width = pdf.get_string_width(f"Timeline {version} – created {str(datetime.datetime.now())[0:16]} – {pdf_author} – license: MIT – some images are CC BY-SA")
     if left_to_right:
         info_width = 0
-    pdf.set_xy(x_position(0) - info_width, y2 - 6)
+    pdf.set_xy(x_position(0.07) - info_width, y2 - 6)
     pdf.cell(text=f"The Promised Seed {version} – created {str(datetime.datetime.now())[0:16]} – ")
     pdf.set_text_color(25, 25, 150)
     pdf.cell(text=f"{pdf_author}", link="https://kreier.github.io/promised-seed/")
@@ -626,28 +632,28 @@ def create_timestamp():
     # pdf.set_text_color(25, 25, 150)
     # pdf.cell(text="CC BY-SA", link="https://creativecommons.org/licenses/by-sa/4.0/")
 
-    qr_file = "../images/qr-" + language + ".png"
-    qr_size = 15*mm
-    if not os.path.exists(qr_file):
-        create_qr_code(qr_file, language)
-    if left_to_right:
-        pdf.image(qr_file, x_position(qr_x), y_position(qr_y), qr_size, qr_size)
-    else:
-        pdf.image(qr_file, x_position(qr_x) - qr_size, y_position(qr_y), qr_size, qr_size)
-    pdf.set_font_size(4.5)
-    pdf.set_text_color(30)
-    timestamp = str(datetime.datetime.now())
-    dateindex = timestamp[2:4] + timestamp[5:7] + timestamp[8:10]
-    rotation_angle = -90
-    rotation_y = y_position(qr_y + 0.1)
-    if left_to_right:
-        rotation_angle = 90
-        rotation_y += qr_size * 0.94
-    with pdf.rotation(angle=rotation_angle, x=x_position(qr_x), y=rotation_y):
-        pdf.set_xy(x_position(qr_x), y_position(qr_y + 0.2) + qr_size * (1.47 + 0.47 * direction_factor))
-        pdf.cell(text="timeline " + language)
-        pdf.set_xy(x_position(qr_x), y_position(qr_y + 0.58) + qr_size * (1.47 + 0.47 * direction_factor))
-        pdf.cell(text=dateindex)
+    # qr_file = "../images/qr-" + language + ".png"
+    # qr_size = 15*mm
+    # if not os.path.exists(qr_file):
+    #     create_qr_code(qr_file, language)
+    # if left_to_right:
+    #     pdf.image(qr_file, x_position(qr_x), y_position(qr_y), qr_size, qr_size)
+    # else:
+    #     pdf.image(qr_file, x_position(qr_x) - qr_size, y_position(qr_y), qr_size, qr_size)
+    # pdf.set_font_size(4.5)
+    # pdf.set_text_color(30)
+    # timestamp = str(datetime.datetime.now())
+    # dateindex = timestamp[2:4] + timestamp[5:7] + timestamp[8:10]
+    # rotation_angle = -90
+    # rotation_y = y_position(qr_y + 0.1)
+    # if left_to_right:
+    #     rotation_angle = 90
+    #     rotation_y += qr_size * 0.94
+    # with pdf.rotation(angle=rotation_angle, x=x_position(qr_x), y=rotation_y):
+    #     pdf.set_xy(x_position(qr_x), y_position(qr_y + 0.2) + qr_size * (1.47 + 0.47 * direction_factor))
+    #     pdf.cell(text="promised-seed " + language)
+    #     pdf.set_xy(x_position(qr_x), y_position(qr_y + 0.58) + qr_size * (1.47 + 0.47 * direction_factor))
+    #     pdf.cell(text=dateindex)
 
 def render_to_file():
     global pdf, filename

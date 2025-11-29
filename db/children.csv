@@ -1,117 +1,25 @@
-key,row,column,color,notes,list,sup,ver
-Adam,1,14.3,blue,,1,0,0.1
-Seth,2,14.3,blue,,2,0,1
-Enosh,3,14.3,blue,,3,0,1
-Kenan,4,14.3,blue,Cainan in Luke 3:37,4,0,1
-Mahalaleel,5,14.3,blue,,5,0,1
-Jared,6,14.3,blue,,6,0,1
-Enoch,7,14.3,blue,,7,0,1
-Methuselah,8,14.3,blue,,8,0,1
-Lamech,9,14.3,blue,,9,0,1
-Noah,10,14.3,blue,,10,0,1
-Shem,11,14.3,blue,,11,0,1
-Arpachshad,12,14.3,blue,,12,0,1
-Shelah,13,14.3,blue,,13,0,1
-Eber,14,14.3,blue,,14,0,1
-Peleg,15,14.3,blue,,15,0,1
-Reu,16,14.3,blue,,16,0,1
-Serug,17,14.3,blue,,17,0,1
-Nahor,18,14.3,blue,,18,0,1
-Terah,19,14.3,blue,,19,0,1
-Abraham,20,14.3,blue,,20,3,1
-Isaac,21,14.3,blue,,21,0,1
-Jacob,22,14.3,blue,,22,0,1
-Judah,23,14.3,blue,Leah,23,0,1
-Levi,23,16.3,blue,Leah,24,0,1
-Reuben,23,10.3,blue,Leah,25,0,1
-Simeon,23,12.3,blue,Leah,26,0,1
-Issachar,23,8.3,blue,Leah,27,0,1
-Zebulun,23,6.3,blue,Leah,28,0,1
-Joseph,23,2.3,blue,Rahel,29,0,1
-Benjamin,23,4.3,blue,Rahel,30,0,1
-Asher,23,18.3,blue,Zilpah,31,0,1
-Gad,23,20.3,blue,Zilpah,32,0,1
-Naphtali,23,22.3,blue,Bilhah,33,0,1
-Dan,23,24.3,blue,Bilhah,34,0,1
-Perez,24,14.3,blue,from Tamar and Judah,35,0,1
-Hezron,25,14.3,blue,,36,0,1
-Ram_Arni,26,14.3,blue,"Matthew Ram, Luke Arni",37,0,1
-Amminadab,27,14.3,blue,,38,0,1
-Nahshon,28,14.3,blue,,28,0,1
-Salma_Salmon,29,14.3,blue,with Rahab (Matthew),29,0,1
-Boaz,30,14.3,blue,with Ruth (Matthew),30,0,1
-Obed,31,14.3,blue,,31,0,1
-Jesse,32,14.3,blue,,32,0,1
-David,33,14.3,blue,with Bathsheba,33,0,1
-Nathan,34,16,blue,natural through Mary (Luke),34,0,1
-Mattatha,35,16,blue,,35,0,1
-Menna,36,16,blue,,36,0,1
-Melea,37,16,blue,,37,0,1
-Eliakim,38,16,blue,,38,0,1
-Jonam,39,16,blue,,39,0,1
-Joseph,40,16,blue,,40,0,1
-Judas,41,16,blue,,41,0,1
-Symeon,42,16,blue,,42,0,1
-Levi,43,16,blue,,43,0,1
-Matthat,44,16,blue,,44,0,1
-Jorim,45,16,blue,,45,0,1
-Eliezer,46,16,blue,,46,0,1
-Jesus,47,16,blue,,47,0,1
-Er,48,16,blue,,48,0,1
-Elmadam,49,16,blue,,49,0,1
-Cosam,50,16,blue,,50,0,1
-Addi,51,16,blue,,51,0,1
-Melchi,52,16,blue,,52,0,1
-Neri,53,16,blue,,53,0,1
-Shealtiel,54,16,blue,,54,0,1
-Zerubbabel,55,14.3,blue,overlap two lineages,55,0,1
-Rhesa,56,16,blue,,56,0,1
-Joanan,57,16,blue,,57,15,1
-Joda,58,16,blue,,58,0,1
-Josech,59,16,blue,,59,0,1
-Semein,60,16,blue,,60,0,1
-Mattathias,61,16,blue,,61,0,1
-Maath,62,16,blue,,62,0,1
-Naggai,63,16,blue,,63,15,1
-Esli,64,16,blue,,64,0,1
-Nahum,65,16,blue,,65,0,1
-Amos,66,16,blue,,66,0,1
-Mattathias,67,16,blue,,67,0,1
-Joseph,68,16,blue,,68,0,1
-Jannai,69,16,blue,,69,0,1
-Melchi,70,16,blue,,70,0,1
-Levi,71,16,blue,,71,0,1
-Matthat,72,16,blue,,72,0,1
-Heli,73,16,blue,,73,15,1
-Mary,74,16,red,Luke states Joseph here,74,0,1
-Jesus,75,14.3,blue,,75,0,1
-Solomon,34,12.6,blue,legal line w/ Joseph (Matthew),76,0,1
-Rehoboam,35,12.6,blue,,77,0,1
-Abijah,36,12.6,blue,,78,0,1
-Asa,37,12.6,blue,Matt 1:8,79,0,1
-Jehoshaphat,38,12.6,blue,,80,0,1
-Jehoram,39,12.6,blue,,81,0,1
-Ahaziah,40,12.6,blue,missing in Matthew,82,0,1
-Jehoash,41,12.6,blue,missing in Matthew,83,0,1
-Amaziah,42,12.6,blue,missing in Matthew,84,0,1
-Uzziah_Azariah,43,12.6,blue,Matt 1:9,85,0,1
-Jotham,44,12.6,blue,,86,0,1
-Ahaz,45,12.6,blue,,87,0,1
-Hezekiah,46,12.6,blue,,88,0,1
-Manasseh,47,12.6,blue,,89,0,1
-Amon,48,12.6,blue,,90,0,1
-Josiah,49,12.6,blue,,91,0,1
-Eliakim_Jehoiakim,50,12.6,blue,,92,0,1
-Jeconiah_Jehoiachin,51,12.6,blue,,93,0,1
-Shealtiel,52,12.6,blue,,94,0,1
-Pedaiah,53,12.6,blue,"missing in Matthew, Z in 55",95,0,1
-Abiud,56,12.6,blue,after Zerubbabel (Sheshbazzar),96,0,1
-Eliakim,58,12.6,blue,,97,0,1
-Azor,60,12.6,blue,,98,0,1
-Zadok,62,12.6,blue,,99,0,1
-Achim,64,12.6,blue,,100,0,1
-Eliud,66,12.6,blue,,101,0,1
-Eleazar,68,12.6,blue,,102,0,1
-Matthan,70,12.6,blue,,103,0,1
-Jacob,72,12.6,blue,,104,0,1
-Joseph,74,12.6,blue,,105,0,1
+parent,child,shift_parent,shift_y,ver
+Eve,Seth,0,0,0.1
+Sarah,Isaac,0,0,0.1
+Rebekah,Jacob,0,0,0.1
+Rahel,Joseph,-5,0,0.1
+Rahel,Benjamin,5,0,0.1
+Leah,Zebulun,-10,-1,0.1
+Leah,Issachar,-6,0,0.1
+Leah,Reuben,-2,1,0.1
+Leah,Simeon,2,1,0.1
+Leah,Judah,6,0,0.1
+Leah,Levi,10,-1,0.1
+Zilpah,Asher,-5,0,0.1
+Zilpah,Gad,5,0,0.1
+Bilhah,Naphtali,-5,0,0.1
+Bilhah,Dan,5,0,0.1
+Bathsheba,Solomon,-3,0,0.1
+Bathsheba,Nathan,3,0,0.1
+Seth,Abraham,0,0,0.1
+Judah,David,0,0,0.1
+Solomon,Pedaiah,0,0,0.1
+Nathan,Shealtiel,0,0,0.1
+Abiud,Joseph4,0,0,0.1
+Rhesa,Mary,0,0,0.1
+Mary,Jesus,0,0,0.1
