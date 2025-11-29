@@ -160,11 +160,6 @@ def create_canvas():
     x2 = x1 + drawing_width
     y2 = y1 + drawing_height
 
-    # The drawing should span from 4075 BCE to 2075 CE, so we have to calculate
-    # the length of one year in dots from drawing_with for this 6150 years
-    global dots_year
-    dots_year = drawing_width / 6150
-
     # Draw small lines into the corners for the print edition, since print shops import only the
     # content area and exclude the white space from the desired print area
     pdf.set_line_width(0.1)
@@ -625,12 +620,6 @@ def create_timestamp():
     pdf.cell(text=f"{pdf_author}", link="https://kreier.github.io/promised-seed/")
     pdf.set_text_color(50)
     pdf.cell(text=" – license: MIT")
-    # pdf.set_text_color(25, 25, 150)
-    # pdf.cell(text="images", link="https://github.com/kreier/timeline/blob/main/images/images_source.csv")
-    # pdf.set_text_color(50)
-    # pdf.cell(text=" are ")
-    # pdf.set_text_color(25, 25, 150)
-    # pdf.cell(text="CC BY-SA", link="https://creativecommons.org/licenses/by-sa/4.0/")
 
     qr_file = "../images/qr-" + language + ".png"
     qr_size = 15*mm
@@ -655,13 +644,17 @@ def create_timestamp():
         pdf.cell(text="promised-seed " + language)
         pdf.set_xy(x_position(qr_x), y_position(qr_y + 0.58) + qr_size * (1.47 - 0.47 * direction_factor))
         pdf.cell(text=dateindex)
+    # And finally the name of this project into the top left corner
+    pdf.set_text_color(28, 14, 118)
+    pdf.set_font("Aptos-bold", "", 24)
+    drawString("The Promised Seed", 22, 7*mm, 6*mm, "r", True)
 
 def render_to_file():
     global pdf, filename
     pdf.output(filename)
     print(f"File exported: {filename}")
 
-def create_timeline(lang):
+def create_promised_seed(lang):
     global language
     language = lang
     initiate_counters()
@@ -714,7 +707,7 @@ def create_dictionary(target_language):
     print(reference)
     dict = reference[['key', 'text']].copy()     # create a new dictionary, copy columns key and text
     dict['english'] = reference['text'].copy()   # add a column 'english' and fill with 'text' from english dictionary
-    dict['notes'] = reference['notes'].copy()         # add a column 'notes' and fill with 'notes' from english dictionary
+    dict['notes'] = reference['notes'].copy()    # add a column 'notes' and fill with 'notes' from english dictionary
     print("\nTranslating ...")
     # start with asyncio since googletrans 4.x is async
     number_characters = 0      # you can translate up to 500,000 characters per month for free
@@ -759,4 +752,4 @@ if __name__ == "__main__":
         exit()
     language = sys.argv[1]
     if is_supported(language):
-        create_timeline(language)
+        create_promised_seed(language)
