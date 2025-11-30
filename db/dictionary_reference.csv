@@ -1,7 +1,7 @@
 key,text,version,notes
-version,0.1,0.1,0.1
-pdf_title,The Promised Seed,0.1,2025-11-25
-pdf_subject,Lineage of Jesus,0.1,0.1
+version,0.2,0.1,0.2
+pdf_title,The Promised Seed,0.1,2025-11-30
+pdf_subject,Lineage of Jesus,0.1,
 Adam,Adam,0.1,Luke 3:38
 Seth,Seth,0.1,
 Enosh,Enosh,0.1,
@@ -87,10 +87,10 @@ Melchi,Melchi,0.1,
 Levi,Levi,0.1,
 Matthat,Matthat,0.1,
 Heli,Heli,0.1,
-Joseph,Joseph,0.1,
-Joseph2,Joseph,0.1,
-Joseph3,Joseph,0.1,
-Joseph4,Joseph,0.1,
+Joseph,Joseph,0.1,son of Rachel
+Joseph2,Joseph,0.1,son of Jonam
+Joseph3,Joseph,0.1,son of Mattathias
+Joseph4,Joseph,0.1,"son of Jacob, stepfather of Jesus"
 Jesus,Jesus,0.1,
 Jesus2,Jesus,0.1,
 Mary,Mary,0.1,Luke states Joseph here
@@ -107,7 +107,8 @@ Uzziah_Azariah,Uzziah (Azariah),0.1,Matt 1:9
 Jotham,Jotham,0.1,
 Ahaz,Ahaz,0.1,
 Hezekiah,Hezekiah,0.1,
-Manasseh,Manasseh,0.1,
+Manasseh,Manasseh,0.1,son of Joseph
+Manasseh2,Manasseh,0.1,son of Hezekiah
 Amon,Amon,0.1,
 Josiah,Josiah,0.1,
 Eliakim_Jehoiakim,Eliakim (Jehoiakim),0.1,
@@ -132,3 +133,10 @@ Rahel,Rahel,0.1,
 Zilpah,Zilpah,0.1,
 Bilhah,Bilhah,0.1,
 Bathsheba,Bathsheba,0.1,
+Dinah,Dinah,0.2,
+Abel,Abel,0.2,
+Cain,Cain,0.2,
+Asenath,Asenath,0.2,
+Manasseh,Manasseh,0.2,
+Ephraim,Ephraim,0.2,
+Hephzinah,Hephzinah,0.2,2 Kings 21:1

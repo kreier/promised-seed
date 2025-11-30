@@ -1,125 +1,132 @@
-key,row,column,color,notes,list,sup,ver
-Adam,1,14.3,blue,*** START IN ROW ONE ***,1,0,0.1
-Seth,2,14.3,blue,,2,0,1
-Enosh,3,14.3,blue,,3,0,1
-Kenan,4,14.3,blue,Cainan in Luke 3:37,4,0,1
-Mahalaleel,5,14.3,blue,,5,0,1
-Jared,6,14.3,blue,,6,0,1
-Enoch,7,14.3,blue,,7,0,1
-Methuselah,8,14.3,blue,,8,0,1
-Lamech,9,14.3,blue,,9,0,1
-Noah,10,14.3,blue,,10,0,1
-Shem,11,14.3,blue,,11,0,1
-Arpachshad,12,14.3,blue,,12,0,1
-Shelah,13,14.3,blue,,13,0,1
-Eber,14,14.3,blue,,14,0,1
-Peleg,15,14.3,blue,,15,0,1
-Reu,16,14.3,blue,,16,0,1
-Serug,17,14.3,blue,,17,0,1
-Nahor,18,14.3,blue,,18,0,1
-Terah,19,14.3,blue,,19,0,1
-Abraham,20,14.3,blue,,20,3,1
-Isaac,21,14.3,blue,,21,0,1
-Jacob,22,14.3,blue,,22,0,1
-Judah,23,14.3,blue,Leah,23,0,1
-Levi,23,16.3,blue,Leah,24,0,1
-Reuben,23,10.3,blue,Leah,25,0,1
-Simeon,23,12.3,blue,Leah,26,0,1
-Issachar,23,8.3,blue,Leah,27,0,1
-Zebulun,23,6.3,blue,Leah,28,0,1
-Joseph,23,2.3,blue,Rahel,29,0,1
-Benjamin,23,4.3,blue,Rahel,30,0,1
-Asher,23,18.3,blue,Zilpah,31,0,1
-Gad,23,20.3,blue,Zilpah,32,0,1
-Naphtali,23,22.3,blue,Bilhah,33,0,1
-Dan,23,24.3,blue,Bilhah,34,0,1
-Perez,24,14.3,blue,from Tamar and Judah,35,0,1
-Hezron,25,14.3,blue,,36,0,1
-Ram_Arni,26,14.3,blue,"Matthew Ram, Luke Arni",37,0,1
-Amminadab,27,14.3,blue,,38,0,1
-Nahshon,28,14.3,blue,,28,0,1
-Salma_Salmon,29,14.3,blue,with Rahab (Matthew),29,0,1
-Boaz,30,14.3,blue,with Ruth (Matthew),30,0,1
-Obed,31,14.3,blue,,31,0,1
-Jesse,32,14.3,blue,,32,0,1
-David,33,14.3,blue,with Bathsheba,33,0,1
-Nathan,34,16,blue,natural through Mary (Luke),34,0,1
-Mattatha,35,16,blue,,35,0,1
-Menna,36,16,blue,,36,0,1
-Melea,37,16,blue,,37,0,1
-Eliakim,38,16,blue,,38,0,1
-Jonam,39,16,blue,,39,0,1
-Joseph2,40,16,blue,,40,0,1
-Judas,41,16,blue,,41,0,1
-Symeon,42,16,blue,,42,0,1
-Levi,43,16,blue,,43,0,1
-Matthat,44,16,blue,,44,0,1
-Jorim,45,16,blue,,45,0,1
-Eliezer,46,16,blue,,46,0,1
-Jesus2,47,16,blue,,47,0,1
-Er,48,16,blue,,48,0,1
-Elmadam,49,16,blue,,49,0,1
-Cosam,50,16,blue,,50,0,1
-Addi,51,16,blue,,51,0,1
-Melchi,52,16,blue,,52,0,1
-Neri,53,16,blue,,53,0,1
-Shealtiel,54,16,blue,,54,0,1
-Zerubbabel,55,14.3,blue,overlap two lineages,55,0,1
-Rhesa,56,16,blue,,56,0,1
-Joanan,57,16,blue,,57,15,1
-Joda,58,16,blue,,58,0,1
-Josech,59,16,blue,,59,0,1
-Semein,60,16,blue,,60,0,1
-Mattathias,61,16,blue,,61,0,1
-Maath,62,16,blue,,62,0,1
-Naggai,63,16,blue,,63,15,1
-Esli,64,16,blue,,64,0,1
-Nahum,65,16,blue,,65,0,1
-Amos,66,16,blue,,66,0,1
-Mattathias,67,16,blue,,67,0,1
-Joseph3,68,16,blue,,68,0,1
-Jannai,69,16,blue,,69,0,1
-Melchi,70,16,blue,,70,0,1
-Levi,71,16,blue,,71,0,1
-Matthat,72,16,blue,,72,0,1
-Heli,73,16,blue,,73,15,1
-Mary,74,16,red,Luke states Joseph here,74,0,1
-Jesus,75,14.3,blue,*** THE PROMISED SEED ***,75,0,1
-Solomon,34,12.6,blue,legal line w/ Joseph (Matthew),76,0,1
-Rehoboam,35,12.6,blue,,77,0,1
-Abijah,36,12.6,blue,,78,0,1
-Asa,37,12.6,blue,Matt 1:8,79,0,1
-Jehoshaphat,38,12.6,blue,,80,0,1
-Jehoram,39,12.6,blue,,81,0,1
-Ahaziah,40,12.6,blue,missing in Matthew,82,0,1
-Jehoash,41,12.6,blue,missing in Matthew,83,0,1
-Amaziah,42,12.6,blue,missing in Matthew,84,0,1
-Uzziah_Azariah,43,12.6,blue,Matt 1:9,85,0,1
-Jotham,44,12.6,blue,,86,0,1
-Ahaz,45,12.6,blue,,87,0,1
-Hezekiah,46,12.6,blue,,88,0,1
-Manasseh,47,12.6,blue,,89,0,1
-Amon,48,12.6,blue,,90,0,1
-Josiah,49,12.6,blue,,91,0,1
-Eliakim_Jehoiakim,50,12.6,blue,,92,0,1
-Jeconiah_Jehoiachin,51,12.6,blue,,93,0,1
-Shealtiel,52,12.6,blue,,94,0,1
-Pedaiah,53,12.6,blue,"missing in Matthew, Z in 55",95,0,1
-Abiud,56,12.6,blue,after Zerubbabel (Sheshbazzar),96,0,1
-Eliakim,58,12.6,blue,,97,0,1
-Azor,60,12.6,blue,,98,0,1
-Zadok,62,12.6,blue,,99,0,1
-Achim,64,12.6,blue,,100,0,1
-Eliud,66,12.6,blue,,101,0,1
-Eleazar,68,12.6,blue,,102,0,1
-Matthan,70,12.6,blue,,103,0,1
-Jacob,72,12.6,blue,,104,0,1
-Joseph4,74,12.6,blue,,105,0,1
-Eve,1,16,red,,106,0,1
-Sarah,20,16,red,,107,0,1
-Rebekah,21,16,red,,108,0,1
-Leah,22,11.3,red,,109,0,1
-Rahel,22,3.3,red,,110,0,1
-Zilpah,22,19.3,red,,111,0,1
-Bilhah,22,23.3,red,,112,0,1
-Bathsheba,33,15.8,red,,112,0,1
+key,row,column,color,notes,list,sup,ver,king
+Adam,1,14.3,blue,*** START IN ROW ONE ***,1,0,0.1,FALSE
+Seth,2,14.3,blue,,2,0,1,FALSE
+Enosh,3,14.3,blue,,3,0,1,FALSE
+Kenan,4,14.3,blue,Cainan in Luke 3:37,4,0,1,FALSE
+Mahalaleel,5,14.3,blue,,5,0,1,FALSE
+Jared,6,14.3,blue,,6,0,1,FALSE
+Enoch,7,14.3,blue,,7,0,1,FALSE
+Methuselah,8,14.3,blue,,8,0,1,FALSE
+Lamech,9,14.3,blue,,9,0,1,FALSE
+Noah,10,14.3,blue,,10,0,1,FALSE
+Shem,11,14.3,blue,,11,0,1,FALSE
+Arpachshad,12,14.3,blue,,12,0,1,FALSE
+Shelah,13,14.3,blue,,13,0,1,FALSE
+Eber,14,14.3,blue,,14,0,1,FALSE
+Peleg,15,14.3,blue,,15,0,1,FALSE
+Reu,16,14.3,blue,,16,0,1,FALSE
+Serug,17,14.3,blue,,17,0,1,FALSE
+Nahor,18,14.3,blue,,18,0,1,FALSE
+Terah,19,14.3,blue,,19,0,1,FALSE
+Abraham,20,14.3,blue,,20,0,1,FALSE
+Isaac,21,14.3,blue,,21,0,1,FALSE
+Jacob,22,14.3,blue,,22,0,1,FALSE
+Dinah,23,3.5,red,Leah,23,0,1,FALSE
+Reuben,23,5.3,blue,Leah,24,0,1,FALSE
+Simeon,23,7.1,blue,Leah,25,0,1,FALSE
+Levi,23,8.9,blue,Leah (8.9),26,0,1,FALSE
+Issachar,23,10.7,blue,Leah,27,0,1,FALSE
+Zebulun,23,12.5,blue,Leah,28,0,1,FALSE
+Judah,23,14.3,blue,Leah,29,0,1,FALSE
+Asher,23,16.1,blue,Zilpah (17.0),30,0,1,FALSE
+Gad,23,17.9,blue,Zilpah,31,0,1,FALSE
+Naphtali,23,19.7,blue,Bilhah (20.6),32,0,1,FALSE
+Dan,23,21.5,blue,Bilhah,33,0,1,FALSE
+Benjamin,23,23.3,blue,Rahel (24.2),34,0,1,FALSE
+Joseph,23,25.1,blue,Rahel,35,0,1,FALSE
+Perez,24,14.3,blue,from Tamar and Judah,36,0,1,FALSE
+Hezron,25,14.3,blue,,37,0,1,FALSE
+Ram_Arni,26,14.3,blue,"Matthew Ram, Luke Arni",38,0,1,FALSE
+Amminadab,27,14.3,blue,,39,0,1,FALSE
+Nahshon,28,14.3,blue,,40,0,1,FALSE
+Salma_Salmon,29,14.3,blue,with Rahab (Matthew),41,0,1,FALSE
+Boaz,30,14.3,blue,with Ruth (Matthew),42,0,1,FALSE
+Obed,31,14.3,blue,,43,0,1,FALSE
+Jesse,32,14.3,blue,,44,0,1,FALSE
+David,33,14.3,blue,with Bathsheba,45,0,1,TRUE
+Nathan,34,12.3,blue,natural through Mary (Luke),46,0,1,FALSE
+Mattatha,35,12.3,blue,,47,0,1,FALSE
+Menna,36,12.3,blue,,48,0,1,FALSE
+Melea,37,12.3,blue,,49,0,1,FALSE
+Eliakim,38,12.3,blue,,50,0,1,FALSE
+Jonam,39,12.3,blue,,51,0,1,FALSE
+Joseph2,40,12.3,blue,son of Jonam,52,0,1,FALSE
+Judas,41,12.3,blue,,53,0,1,FALSE
+Symeon,42,12.3,blue,,54,0,1,FALSE
+Levi,43,12.3,blue,,55,0,1,FALSE
+Matthat,44,12.3,blue,,56,0,1,FALSE
+Jorim,45,12.3,blue,,57,0,1,FALSE
+Eliezer,46,12.3,blue,,58,0,1,FALSE
+Jesus2,47,12.3,blue,,59,0,1,FALSE
+Er,48,12.3,blue,,60,0,1,FALSE
+Elmadam,49,12.3,blue,,61,0,1,FALSE
+Cosam,50,12.3,blue,,62,0,1,FALSE
+Addi,51,12.3,blue,,63,0,1,FALSE
+Melchi,52,12.3,blue,,64,0,1,FALSE
+Neri,53,12.3,blue,,65,0,1,FALSE
+Shealtiel,54,12.3,blue,,66,0,1,FALSE
+Zerubbabel,55,14.3,blue,overlap two lineages,67,0,1,TRUE
+Rhesa,56,12.3,blue,,68,0,1,FALSE
+Joanan,57,12.3,blue,,69,15,1,FALSE
+Joda,58,12.3,blue,,70,0,1,FALSE
+Josech,59,12.3,blue,,71,0,1,FALSE
+Semein,60,12.3,blue,,72,0,1,FALSE
+Mattathias,61,12.3,blue,,73,0,1,FALSE
+Maath,62,12.3,blue,,74,0,1,FALSE
+Naggai,63,12.3,blue,,75,15,1,FALSE
+Esli,64,12.3,blue,,76,0,1,FALSE
+Nahum,65,12.3,blue,,77,0,1,FALSE
+Amos,66,12.3,blue,,78,0,1,FALSE
+Mattathias,67,12.3,blue,,79,0,1,FALSE
+Joseph3,68,12.3,blue,son of Mattathias,80,0,1,FALSE
+Jannai,69,12.3,blue,,81,0,1,FALSE
+Melchi,70,12.3,blue,,82,0,1,FALSE
+Levi,71,12.3,blue,,83,0,1,FALSE
+Matthat,72,12.3,blue,,84,0,1,FALSE
+Heli,73,12.3,blue,,85,15,1,FALSE
+Mary,74,12.3,red,Luke states Joseph here,86,0,1,FALSE
+Jesus,75,14.3,blue,*** THE PROMISED SEED ***,87,0,1,TRUE
+Solomon,34,16.3,blue,legal line w/ Joseph (Matthew),88,0,1,TRUE
+Rehoboam,35,16.3,blue,,89,0,1,TRUE
+Abijah,36,16.3,blue,,90,0,1,TRUE
+Asa,37,16.3,blue,Matt 1:8,91,0,1,TRUE
+Jehoshaphat,38,16.3,blue,,92,0,1,TRUE
+Jehoram,39,16.3,blue,,93,0,1,TRUE
+Ahaziah,40,16.3,blue,missing in Matthew,94,0,1,TRUE
+Jehoash,41,16.3,blue,missing in Matthew,95,0,1,TRUE
+Amaziah,42,16.3,blue,missing in Matthew,96,0,1,TRUE
+Uzziah_Azariah,43,16.3,blue,Matt 1:9,97,0,1,TRUE
+Jotham,44,16.3,blue,,98,0,1,TRUE
+Ahaz,45,16.3,blue,,99,0,1,TRUE
+Hezekiah,46,16.3,blue,,100,0,1,TRUE
+Manasseh2,47,16.3,blue,,101,0,1,TRUE
+Amon,48,16.3,blue,,102,0,1,TRUE
+Josiah,49,16.3,blue,,103,0,1,TRUE
+Eliakim_Jehoiakim,50,16.3,blue,,104,0,1,TRUE
+Jeconiah_Jehoiachin,51,16.3,blue,,105,0,1,TRUE
+Shealtiel,52,16.3,blue,,106,0,1,FALSE
+Pedaiah,53,16.3,blue,"missing in Matthew, Z in 55",107,0,1,FALSE
+Abiud,56,16.3,blue,after Zerubbabel (Sheshbazzar),108,0,1,FALSE
+Eliakim,58,16.3,blue,,109,0,1,FALSE
+Azor,60,16.3,blue,,110,0,1,FALSE
+Zadok,62,16.3,blue,,111,0,1,FALSE
+Achim,64,16.3,blue,,112,0,1,FALSE
+Eliud,66,16.3,blue,,113,0,1,FALSE
+Eleazar,68,16.3,blue,,114,0,1,FALSE
+Matthan,70,16.3,blue,,115,0,1,FALSE
+Jacob,72,16.3,blue,,116,0,1,FALSE
+Joseph4,74,16.3,blue,"son of Jacob, stepfather of Jesus",117,0,1,FALSE
+Eve,1,16.3,red,,118,0,1,FALSE
+Sarah,20,16.3,red,,119,0,1,FALSE
+Rebekah,21,16.3,red,,120,0,1,FALSE
+Leah,22,8.9,red,Leah (8.9),121,0,1,FALSE
+Zilpah,22,17,red,Zilpah (17.0),122,0,1,FALSE
+Bilhah,22,20.6,red,Bilhah (20.6),123,0,1,FALSE
+Rahel,22,24.2,red,Rahel (24.2),124,0,1,FALSE
+Bathsheba,33,16,red,,125,0,1,FALSE
+Abel,2,16.3,blue,,126,0,1,FALSE
+Cain,2,18.3,blue,,127,0,1,FALSE
+Asenath,23,26.9,red,,128,0,1,FALSE
+Manasseh,24,25.1,blue,,129,0,1,FALSE
+Ephraim,24,26.9,blue,,130,0,1,FALSE
+Hephzinah,46,19.7,red,2 Kings 21:1,131,0,1,FALSE

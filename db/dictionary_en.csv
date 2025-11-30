@@ -1,7 +1,7 @@
 key,text,english,notes
-version,0.1,0.1,
-pdf_title,The Promised Seed,The Promised Seed,2025-11-20
-pdf_subject,Lineage of Jesus,Lineage of Jesus,0.1
+version,0.2,0.2,
+pdf_title,The Promised Seed,The Promised Seed,2025-11-30
+pdf_subject,Lineage of Jesus,Lineage of Jesus,
 Adam,Adam,Adam,Luke 3:38
 Seth,Seth,Seth,
 Enosh,Enosh,Enosh,
@@ -87,8 +87,12 @@ Melchi,Melchi,Melchi,
 Levi,Levi,Levi,
 Matthat,Matthat,Matthat,
 Heli,Heli,Heli,
-Joseph,Joseph,Joseph,
+Joseph,Joseph,Joseph,son of Rachel
+Joseph2,Joseph,Joseph,son of Jonam
+Joseph3,Joseph,Joseph,son of Mattathias
+Joseph4,Joseph,Joseph,"son of Jacob, stepfather of Jesus"
 Jesus,Jesus,Jesus,
+Jesus2,Jesus,Jesus,
 Mary,Mary,Mary,Luke states Joseph here
 Solomon,Solomon,Solomon,legal line w/ Joseph (Matthew)
 Rehoboam,Rehoboam,Rehoboam,
@@ -103,7 +107,8 @@ Uzziah_Azariah,Uzziah (Azariah),Uzziah (Azariah),Matt 1:9
 Jotham,Jotham,Jotham,
 Ahaz,Ahaz,Ahaz,
 Hezekiah,Hezekiah,Hezekiah,
-Manasseh,Manasseh,Manasseh,
+Manasseh,Manasseh,Manasseh,son of Joseph
+Manasseh2,Manasseh,Manasseh,son of Hezekiah
 Amon,Amon,Amon,
 Josiah,Josiah,Josiah,
 Eliakim_Jehoiakim,Eliakim (Jehoiakim),Eliakim (Jehoiakim),
@@ -120,3 +125,18 @@ Eleazar,Eleazar,Eleazar,
 Matthan,Matthan,Matthan,
 Jacob,Jacob,Jacob,
 Joseph,Joseph,Joseph,
+Eve,Eve,Eve,
+Sarah,Sarah,Sarah,
+Rebekah,Rebekah,Rebekah,
+Leah,Leah,Leah,
+Rahel,Rahel,Rahel,
+Zilpah,Zilpah,Zilpah,
+Bilhah,Bilhah,Bilhah,
+Bathsheba,Bathsheba,Bathsheba,
+Dinah,Dinah,Dinah,
+Abel,Abel,Abel,
+Cain,Cain,Cain,
+Asenath,Asenath,Asenath,
+Manasseh,Manasseh,Manasseh,
+Ephraim,Ephraim,Ephraim,
+Hephzinah,Hephzinah,Hephzinah,2 Kings 21:1

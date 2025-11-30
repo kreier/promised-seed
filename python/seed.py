@@ -462,27 +462,6 @@ def create_people():
         if row.color == "red":
             pdf.set_text_color(red[0]*255, red[1]*255, red[2]*255)
         drawString(dict[row.key], 10, x, y, "c", False)
-        # if version > 4.8:
-        #     # check if key is in footnotes to add a superscript number
-        #     if row.key in footnotes['key'].values:
-        #         fn_row = footnotes.loc[footnotes['key'] == row.key].iloc[0]
-        #         if fn_row.sup > 0:
-        #             pdf.char_vpos = "SUP"
-        #             pdf.write(text=str(int(fn_row.sup)))
-        #             pdf.char_vpos = "LINE"
-        #     if row.sup > 0:
-        #         pdf.char_vpos = "SUP"
-        #         pdf.write(text=str(int(row.sup)))
-        #         pdf.char_vpos = "LINE"
-    # pdf.set_text_color(0, 0, 0)
-    # for index, row in footnotes.iterrows():
-    #     text_footnote = row.key
-    #     fontsize_footnote = fontsize_regular
-    #     if version > 5.8:
-    #         text_footnote += "_fn"
-    #         fontsize_footnote -= 2
-    #     drawString(dict[text_footnote], fontsize_footnote, x_position(row.year), y_position(row.row), "r", True)
-    # counter_terahfam = 126  # hardcoded instead of 88, as counting is difficult here
 
 def include_pictures():
     global font_regular, direction, pdf
