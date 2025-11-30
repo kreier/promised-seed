@@ -9,6 +9,8 @@ Visualizing the lineage of Jesus, starting with Adam and connecting families and
 
 For people of Israel 2000 years ago it was of big importance to trace their family back in a genealogy. This was important to have a part in inherited land, or enjoy certain privileges. For example, after the exile in Babylon the families of _Habaiah_, _Hakkoz_, and _Barzillai_ who could not find their genealogical records. (Ezra 2:61-63, Nehemiah 7:63-65) Because they could not prove their lineage, they were excluded from the priesthood and forbidden to eat the sacred food until a priest could determine their status using the Urim and Thummim.
 
+<img src="history/1x1.png" width="5%"><img src="history/2025-11-30_promised-seed_v0.1.jpg" width="40%"><img src="history/1x1.png" width="5%"> <img src="history/promised_seed_2005.png" width="44%">
+
 Of even greater importance was the lineage of the promised Messiah. He needed to be a son of Abraham, Judah and David. Therefore both Matthew and Luke include a geneaology of Jesus Christ. But if you look at them, you will find some differences. The more details one unveils, the more interesting and connected to world history this lineage becomes. Hence this project to condense and visualize some findings of this study. But first we have to think about size:
 
 ## Size consideration
